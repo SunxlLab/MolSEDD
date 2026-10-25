@@ -1,0 +1,23 @@
+figure,panel,dataset,group,source_file,raw_n,sampled_n,valid_n,note
+Fig. 1,a,QM9,Training set,train/trainQM9.txt,109042,3000,3000,Grey dashed KDE curve.
+Fig. 1,a,QM9,Target LogP = -1,cond/QM9to-1.txt,5120,3792,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 1,a,QM9,Target LogP = 0,cond/QM9to0.txt,5120,3169,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 1,a,QM9,Target LogP = 1,cond/QM9to1.txt,5120,3563,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 2,,MOSES,Training set,train/trainMOSES.txt,1578249,3000,3000,Grey dashed KDE curve.
+Fig. 2,,MOSES,Target LogP = 1,cond/MOSESto1.txt,5120,3614,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 2,,MOSES,Target LogP = 2,cond/MOSESto2.txt,5120,3215,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 2,,MOSES,Target LogP = 3,cond/MOSESto3.txt,5120,4708,3000,Colored solid KDE curve; dotted vertical line marks the target LogP.
+Fig. 3,all,QM9,Training set,train/trainQM9.txt,109042,3000,3000,Shared grey dashed reference across all panels.
+Fig. 3,a,QM9,Step 0,condtsne/qm9to-1_0.txt,1000,1000,990,Generated molecules at Step 0; vertical dotted line marks target LogP -1.
+Fig. 3,b,QM9,Step 500,condtsne/qm9to-1_500.txt,1000,1000,842,Generated molecules at Step 500; vertical dotted line marks target LogP -1.
+Fig. 3,c,QM9,Step 1000,condtsne/qm9to-1_1000.txt,1000,1000,781,Generated molecules at Step 1000; vertical dotted line marks target LogP -1.
+Fig. 3,d,QM9,Step 2000,condtsne/qm9to-1_2000.txt,1000,1000,797,Generated molecules at Step 2000; vertical dotted line marks target LogP -1.
+Fig. 4,all,QM9,Training set,train/trainQM9.txt,109042,3000,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 4,all,QM9,Generated,generate/QM9.txt,9999,3041,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 5,all,ZINC,Training set,train/trainZINC.txt,191321,3000,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 5,all,ZINC,Generated,generate/ZINC.txt,9999,3334,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 6,all,MOSES,Training set,train/trainMOSES.txt,1578249,3000,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 6,all,MOSES,Generated,generate/MOSES.txt,11887,3099,3000,"Descriptors: LogP, QED, TPSA and molecular weight."
+Fig. 8,a,MOSES,Target LogP = 1,user-specified SMILES in task file,5,5,5,User-specified molecular structures for target LogP 1; RDKit-calculated LogP values are shown above each molecule.
+Fig. 8,b,MOSES,Target LogP = 2,user-specified SMILES in task file,5,5,5,User-specified molecular structures for target LogP 2; RDKit-calculated LogP values are shown above each molecule.
+Fig. 8,c,MOSES,Target LogP = 3,user-specified SMILES in task file,5,5,5,User-specified molecular structures for target LogP 3; RDKit-calculated LogP values are shown above each molecule.

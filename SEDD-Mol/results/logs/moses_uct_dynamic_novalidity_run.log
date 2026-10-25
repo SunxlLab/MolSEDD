@@ -1,0 +1,870 @@
+[2026-08-23 21:55:44] Initial (Root) Tokens: ['Br', 'C', 'Cl', 'F', 'N', 'O', '[H]', 'c']
+[2026-08-23 21:55:44] Loading model from /mnt/data0/CAI_zhanpeng/exp_local/2026.02.26/104218...
+Loading weights from local directory
+[2026-08-23 21:55:53] Model loaded successfully.
+[2026-08-23 21:55:53] Starting MOSES Dynamic-vocab UCT (no validity filter) with 500 simulations...
+[2026-08-23 21:57:00]     [Disc & Sim] Prefix: C | Eff: 99.00% | AvgLogP: 2.4990 | MAE: 1.5469 | R: 0.2129 | Found 8 children -- [#, =, C, N, O, S, c, n]
+[2026-08-23 22:00:07]     [Disc & Sim] Prefix: Br | Eff: 80.00% | AvgLogP: 2.9023 | MAE: 1.9702 | R: 0.1394 | Found 9 children -- [#, 1, =, C, N, O, S, c, n]
+[2026-08-23 22:04:23]     [Disc & Sim] Prefix: O | Eff: 96.00% | AvgLogP: 2.1877 | MAE: 1.3450 | R: 0.2605 | Found 8 children -- [#, 1, =, C, N, O, S, c]
+[2026-08-23 22:08:34]     [Disc & Sim] Prefix: Cl | Eff: 75.00% | AvgLogP: 2.8194 | MAE: 1.8921 | R: 0.1508 | Found 9 children -- [#, 1, =, C, N, O, S, c, n]
+[2026-08-23 22:12:38]     [Disc & Sim] Prefix: c | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [#, 1, =, C, N, O, S, c, n]
+[2026-08-23 22:12:38]     [Dead Node] New child c died immediately.
+[2026-08-23 22:16:53]     [Disc & Sim] Prefix: [H] | Eff: 99.00% | AvgLogP: 2.2917 | MAE: 1.4116 | R: 0.2438 | Found 9 children -- [#, 1, =, C, N, O, S, c, n]
+[2026-08-23 22:21:11]     [Disc & Sim] Prefix: N | Eff: 95.00% | AvgLogP: 1.8999 | MAE: 1.1672 | R: 0.3112 | Found 8 children -- [#, =, C, N, O, S, c, n]
+[2026-08-23 22:25:21]     [Disc & Sim] Prefix: F | Eff: 82.50% | AvgLogP: 2.4420 | MAE: 1.5039 | R: 0.2223 | Found 9 children -- [#, 1, =, C, N, O, S, c, n]
+[2026-08-23 22:29:36]     [Disc & Sim] Prefix: NN | Eff: 66.00% | AvgLogP: 1.2055 | MAE: 0.8797 | R: 0.4149 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:33:49]     [Disc & Sim] Prefix: O# | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:33:49]     [Dead Node] New child O# died immediately.
+[2026-08-23 22:33:49] Loop 10/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-23 22:37:53]     [Disc & Sim] Prefix: O= | Eff: 86.00% | AvgLogP: 2.3640 | MAE: 1.4735 | R: 0.2291 | Found 6 children -- [(, 1, C, S, c, n]
+[2026-08-23 22:42:12]     [Disc & Sim] Prefix: [H]n | Eff: 26.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:42:12]     [Dead Node] New child [H]n died immediately.
+[2026-08-23 22:46:18]     [Disc & Sim] Prefix: [H]= | Eff: 75.00% | AvgLogP: 2.7526 | MAE: 1.8237 | R: 0.1614 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:50:27]     [Disc & Sim] Prefix: Fc | Eff: 74.00% | AvgLogP: 2.6127 | MAE: 1.6851 | R: 0.1854 | Found 6 children -- [(, 1, C, N, O, c]
+[2026-08-23 22:54:41]     [Disc & Sim] Prefix: C= | Eff: 48.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:54:41]     [Dead Node] New child C= died immediately.
+[2026-08-23 22:58:50]     [Disc & Sim] Prefix: C# | Eff: 37.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 22:58:50]     [Dead Node] New child C# died immediately.
+[2026-08-23 23:02:57]     [Disc & Sim] Prefix: CO | Eff: 84.50% | AvgLogP: 2.4130 | MAE: 1.5679 | R: 0.2085 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-23 23:07:08]     [Disc & Sim] Prefix: Cl# | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:07:08]     [Dead Node] New child Cl# died immediately.
+[2026-08-23 23:11:16]     [Disc & Sim] Prefix: ClS | Eff: 78.00% | AvgLogP: 3.2519 | MAE: 2.2627 | R: 0.1041 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-23 23:15:23]     [Disc & Sim] Prefix: BrC | Eff: 93.00% | AvgLogP: 2.9308 | MAE: 1.9637 | R: 0.1403 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:15:23] Loop 20/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-23 23:19:44]     [Disc & Sim] Prefix: N# | Eff: 76.50% | AvgLogP: 2.5405 | MAE: 1.6598 | R: 0.1902 | Found 6 children -- [(, 1, C, O, S, c]
+[2026-08-23 23:23:51]     [Disc & Sim] Prefix: Oc | Eff: 51.50% | AvgLogP: 2.2341 | MAE: 1.2865 | R: 0.2762 | Found 7 children -- [(, 1, C, O, S, c, n]
+[2026-08-23 23:28:03]     [Disc & Sim] Prefix: CS | Eff: 76.00% | AvgLogP: 2.5009 | MAE: 1.6758 | R: 0.1872 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:32:19]     [Disc & Sim] Prefix: F= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:32:19]     [Dead Node] New child F= died immediately.
+[2026-08-23 23:36:29]     [Disc & Sim] Prefix: Fn | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-23 23:36:29]     [Dead Node] New child Fn died immediately.
+[2026-08-23 23:40:44]     [Disc & Sim] Prefix: F1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:40:44]     [Dead Node] New child F1 died immediately.
+[2026-08-23 23:45:00]     [Disc & Sim] Prefix: F# | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-23 23:45:00]     [Dead Node] New child F# died immediately.
+[2026-08-23 23:49:09]     [Disc & Sim] Prefix: FS | Eff: 76.00% | AvgLogP: 3.0116 | MAE: 2.0530 | R: 0.1283 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-23 23:53:22]     [Disc & Sim] Prefix: [H]c | Eff: 73.50% | AvgLogP: 2.1774 | MAE: 1.3070 | R: 0.2706 | Found 7 children -- [(, 1, C, O, S, c, n]
+[2026-08-23 23:57:36]     [Disc & Sim] Prefix: Brn | Eff: 26.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-23 23:57:36]     [Dead Node] New child Brn died immediately.
+[2026-08-23 23:57:36] Loop 30/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 00:01:39]     [Disc & Sim] Prefix: BrO | Eff: 82.50% | AvgLogP: 2.9849 | MAE: 2.0001 | R: 0.1353 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-24 00:05:27]     [Disc & Sim] Prefix: Cl1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 00:05:27]     [Dead Node] New child Cl1 died immediately.
+[2026-08-24 00:09:13]     [Disc & Sim] Prefix: Cl= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:09:13]     [Dead Node] New child Cl= died immediately.
+[2026-08-24 00:12:55]     [Disc & Sim] Prefix: ClO | Eff: 87.50% | AvgLogP: 2.8863 | MAE: 1.9047 | R: 0.1489 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:16:42]     [Disc & Sim] Prefix: NC | Eff: 95.00% | AvgLogP: 1.7162 | MAE: 1.0207 | R: 0.3603 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 00:20:42]     [Disc & Sim] Prefix: ON | Eff: 89.00% | AvgLogP: 2.0106 | MAE: 1.2354 | R: 0.2907 | Found 7 children -- [(, 1, C, N, S, c, n]
+[2026-08-24 00:24:41]     [Disc & Sim] Prefix: [H]C | Eff: 92.50% | AvgLogP: 2.3502 | MAE: 1.4262 | R: 0.2402 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 00:28:42]     [Disc & Sim] Prefix: CC | Eff: 93.50% | AvgLogP: 2.4163 | MAE: 1.5644 | R: 0.2092 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:32:47]     [Disc & Sim] Prefix: NO | Eff: 70.00% | AvgLogP: 1.6776 | MAE: 0.9708 | R: 0.3788 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-24 00:36:47]     [Disc & Sim] Prefix: FC | Eff: 92.50% | AvgLogP: 2.4263 | MAE: 1.4863 | R: 0.2262 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:36:47] Loop 40/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 00:40:41]     [Disc & Sim] Prefix: O1 | Eff: 0.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:40:41]     [Dead Node] New child O1 died immediately.
+[2026-08-24 00:44:47]     [Disc & Sim] Prefix: OC | Eff: 92.00% | AvgLogP: 1.7760 | MAE: 1.0744 | R: 0.3415 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 00:48:52]     [Disc & Sim] Prefix: Br= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:48:52]     [Dead Node] New child Br= died immediately.
+[2026-08-24 00:52:57]     [Disc & Sim] Prefix: BrS | Eff: 79.00% | AvgLogP: 3.2544 | MAE: 2.2753 | R: 0.1028 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:57:10]     [Disc & Sim] Prefix: Cln | Eff: 28.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 00:57:10]     [Dead Node] New child Cln died immediately.
+[2026-08-24 01:01:16]     [Disc & Sim] Prefix: ClC | Eff: 90.50% | AvgLogP: 2.6689 | MAE: 1.7151 | R: 0.1799 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:05:22]     [Disc & Sim] Prefix: N= | Eff: 72.00% | AvgLogP: 2.6588 | MAE: 1.7264 | R: 0.1779 | Found 7 children -- [(, 1, C, N, O, S, c]
+[2026-08-24 01:09:34]     [Disc & Sim] Prefix: [H]N | Eff: 72.50% | AvgLogP: 1.7895 | MAE: 1.1081 | R: 0.3302 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:13:41]     [Disc & Sim] Prefix: Cc | Eff: 76.50% | AvgLogP: 2.5594 | MAE: 1.5937 | R: 0.2032 | Found 7 children -- [(, 1, =, C, O, S, c]
+[2026-08-24 01:17:49]     [Disc & Sim] Prefix: OS | Eff: 83.50% | AvgLogP: 3.1916 | MAE: 2.2323 | R: 0.1073 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:17:49] Loop 50/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 01:22:01]     [Disc & Sim] Prefix: FO | Eff: 77.00% | AvgLogP: 2.6555 | MAE: 1.7118 | R: 0.1805 | Found 6 children -- [(, 1, C, N, O, c]
+[2026-08-24 01:26:10]     [Disc & Sim] Prefix: [H]1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-24 01:26:10]     [Dead Node] New child [H]1 died immediately.
+[2026-08-24 01:30:18]     [Disc & Sim] Prefix: [H]# | Eff: 67.00% | AvgLogP: 2.4881 | MAE: 1.6359 | R: 0.1948 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:34:35]     [Disc & Sim] Prefix: Nn | Eff: 21.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:34:35]     [Dead Node] New child Nn died immediately.
+[2026-08-24 01:38:39]     [Disc & Sim] Prefix: NS | Eff: 76.00% | AvgLogP: 1.9180 | MAE: 1.2182 | R: 0.2958 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-24 01:42:54]     [Disc & Sim] Prefix: Clc | Eff: 75.00% | AvgLogP: 3.0601 | MAE: 2.0786 | R: 0.1251 | Found 7 children -- [(, 1, C, N, O, S, c]
+[2026-08-24 01:47:09]     [Disc & Sim] Prefix: Br# | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 01:47:09]     [Dead Node] New child Br# died immediately.
+[2026-08-24 01:51:09]     [Disc & Sim] Prefix: Br1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 01:51:09]     [Dead Node] New child Br1 died immediately.
+[2026-08-24 01:55:30]     [Disc & Sim] Prefix: Brc | Eff: 76.00% | AvgLogP: 3.2155 | MAE: 2.2160 | R: 0.1090 | Found 7 children -- [(, 1, C, N, O, S, c]
+[2026-08-24 01:59:39]     [Disc & Sim] Prefix: Cn | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 01:59:39]     [Dead Node] New child Cn died immediately.
+[2026-08-24 01:59:39] Loop 60/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 02:03:48]     [Disc & Sim] Prefix: CN | Eff: 78.00% | AvgLogP: 2.0094 | MAE: 1.2870 | R: 0.2761 | Found 7 children -- [(, 1, C, N, O, S, c]
+[2026-08-24 02:08:06]     [Disc & Sim] Prefix: FN | Eff: 74.50% | AvgLogP: 2.3187 | MAE: 1.4164 | R: 0.2426 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 02:12:18]     [Disc & Sim] Prefix: Nc | Eff: 68.50% | AvgLogP: 1.9478 | MAE: 1.1701 | R: 0.3103 | Found 5 children -- [(, 1, C, O, c]
+[2026-08-24 02:16:28]     [Disc & Sim] Prefix: OO | Eff: 84.00% | AvgLogP: 2.4529 | MAE: 1.5380 | R: 0.2148 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 02:20:44]     [Disc & Sim] Prefix: [H]O | Eff: 85.50% | AvgLogP: 1.9766 | MAE: 1.1833 | R: 0.3063 | Found 7 children -- [(, 1, C, N, O, S, c]
+[2026-08-24 02:24:51]     [Disc & Sim] Prefix: CNc | Eff: 63.00% | AvgLogP: 2.2855 | MAE: 1.3959 | R: 0.2476 | Found 8 children -- [(, 1, =, C, S, c, n, o]
+[2026-08-24 02:29:00]     [Disc & Sim] Prefix: NNS | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 02:29:00]     [Dead Node] New child NNS died immediately.
+[2026-08-24 02:33:20]     [Disc & Sim] Prefix: NN( | Eff: 49.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 02:33:20]     [Dead Node] New child NN( died immediately.
+[2026-08-24 02:37:27]     [Disc & Sim] Prefix: NNn | Eff: 12.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, 5, =, C, N, c, n, s]
+[2026-08-24 02:37:27]     [Dead Node] New child NNn died immediately.
+[2026-08-24 02:41:46]     [Disc & Sim] Prefix: NN1 | Eff: 18.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, c, n, o, s]
+[2026-08-24 02:41:46]     [Dead Node] New child NN1 died immediately.
+[2026-08-24 02:41:46] Loop 70/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 02:45:57]     [Disc & Sim] Prefix: NNC | Eff: 87.50% | AvgLogP: 1.2800 | MAE: 1.0018 | R: 0.3672 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 02:50:02]     [Disc & Sim] Prefix: ClN | Eff: 78.00% | AvgLogP: 2.5511 | MAE: 1.6233 | R: 0.1972 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 02:54:21]     [Disc & Sim] Prefix: FNO | Eff: 33.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 02:54:21]     [Dead Node] New child FNO died immediately.
+[2026-08-24 02:58:30]     [Disc & Sim] Prefix: FNS | Eff: 42.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, N, O, c, n]
+[2026-08-24 02:58:30]     [Dead Node] New child FNS died immediately.
+[2026-08-24 03:02:47]     [Disc & Sim] Prefix: FNN | Eff: 33.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, N, O, c, n]
+[2026-08-24 03:02:47]     [Dead Node] New child FNN died immediately.
+[2026-08-24 03:06:56]     [Disc & Sim] Prefix: FN1 | Eff: 13.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, S, [nH], c, n, s]
+[2026-08-24 03:06:56]     [Dead Node] New child FN1 died immediately.
+[2026-08-24 03:11:07]     [Disc & Sim] Prefix: FNC | Eff: 85.00% | AvgLogP: 1.9747 | MAE: 1.2617 | R: 0.2832 | Found 9 children -- [(, 1, 4, C, N, O, S, c, n]
+[2026-08-24 03:15:13]     [Disc & Sim] Prefix: [H]S | Eff: 81.00% | AvgLogP: 2.4565 | MAE: 1.6395 | R: 0.1941 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 03:19:37]     [Disc & Sim] Prefix: OC( | Eff: 81.00% | AvgLogP: 1.7800 | MAE: 1.1672 | R: 0.3112 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 03:23:43]     [Disc & Sim] Prefix: BrN | Eff: 71.50% | AvgLogP: 2.6396 | MAE: 1.6980 | R: 0.1830 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-24 03:23:43] Loop 80/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 03:27:47]     [Disc & Sim] Prefix: NO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, [nH], c, n, o]
+[2026-08-24 03:27:47]     [Dead Node] New child NO1 died immediately.
+[2026-08-24 03:32:12]     [Disc & Sim] Prefix: NOc | Eff: 81.00% | AvgLogP: 1.9060 | MAE: 1.0818 | R: 0.3390 | Found 6 children -- [(, 1, =, C, c, n]
+[2026-08-24 03:36:21]     [Disc & Sim] Prefix: CCC | Eff: 80.50% | AvgLogP: 2.5681 | MAE: 1.6879 | R: 0.1849 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 03:40:32]     [Disc & Sim] Prefix: ONc | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 03:40:32]     [Dead Node] New child ONc died immediately.
+[2026-08-24 03:44:47]     [Disc & Sim] Prefix: ONN | Eff: 61.50% | AvgLogP: 1.6910 | MAE: 1.1006 | R: 0.3327 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 03:48:59]     [Disc & Sim] Prefix: FCN | Eff: 66.00% | AvgLogP: 1.9505 | MAE: 1.2056 | R: 0.2995 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 03:53:11]     [Disc & Sim] Prefix: NC( | Eff: 89.50% | AvgLogP: 1.7202 | MAE: 1.0023 | R: 0.3670 | Found 9 children -- [(, 1, =, C, F, N, O, S, c]
+[2026-08-24 03:57:26]     [Disc & Sim] Prefix: ClN( | Eff: 69.50% | AvgLogP: 2.6392 | MAE: 1.7140 | R: 0.1801 | Found 7 children -- [(, 1, =, C, I, N, c]
+[2026-08-24 04:01:26]     [Disc & Sim] Prefix: [H]NN | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, c, n, o, s]
+[2026-08-24 04:01:26]     [Dead Node] New child [H]NN died immediately.
+[2026-08-24 04:05:18]     [Disc & Sim] Prefix: [H]Nn | Eff: 14.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 04:05:18]     [Dead Node] New child [H]Nn died immediately.
+[2026-08-24 04:05:18] Loop 90/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 04:09:07]     [Disc & Sim] Prefix: [H]NS | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 04:09:07]     [Dead Node] New child [H]NS died immediately.
+[2026-08-24 04:12:48]     [Disc & Sim] Prefix: [H]NO | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, -, 1, =, C, N, O, c, n]
+[2026-08-24 04:12:48]     [Dead Node] New child [H]NO died immediately.
+[2026-08-24 04:16:41]     [Disc & Sim] Prefix: [H]NC | Eff: 77.00% | AvgLogP: 1.5479 | MAE: 0.9199 | R: 0.3985 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-24 04:20:41]     [Disc & Sim] Prefix: BrN1 | Eff: 20.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, [nH], c, n, o]
+[2026-08-24 04:20:41]     [Dead Node] New child BrN1 died immediately.
+[2026-08-24 04:24:41]     [Disc & Sim] Prefix: BrN( | Eff: 70.50% | AvgLogP: 2.8935 | MAE: 1.9579 | R: 0.1412 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 04:28:38]     [Disc & Sim] Prefix: Nc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, [nH], c, n, s]
+[2026-08-24 04:28:38]     [Dead Node] New child Nc( died immediately.
+[2026-08-24 04:32:42]     [Disc & Sim] Prefix: Nc1 | Eff: 93.00% | AvgLogP: 2.1540 | MAE: 1.3222 | R: 0.2665 | Found 6 children -- [=, C, [nH], c, n, o]
+[2026-08-24 04:36:46]     [Disc & Sim] Prefix: Occ | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, c, n, o, s]
+[2026-08-24 04:36:46]     [Dead Node] New child Occ died immediately.
+[2026-08-24 04:40:44]     [Disc & Sim] Prefix: OcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, C, N, O, S, c, n, o]
+[2026-08-24 04:40:44]     [Dead Node] New child OcC died immediately.
+[2026-08-24 04:44:48]     [Disc & Sim] Prefix: OcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, N, [nH], c, n]
+[2026-08-24 04:44:48]     [Dead Node] New child OcO died immediately.
+[2026-08-24 04:44:48] Loop 100/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 04:48:50]     [Disc & Sim] Prefix: Oc1 | Eff: 88.50% | AvgLogP: 2.1531 | MAE: 1.2620 | R: 0.2831 | Found 8 children -- [(, =, C, [nH], c, n, o, s]
+[2026-08-24 04:52:51]     [Disc & Sim] Prefix: [H]Oc | Eff: 86.00% | AvgLogP: 2.2709 | MAE: 1.3611 | R: 0.2564 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-24 04:57:08]     [Disc & Sim] Prefix: Fc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 04:57:08]     [Dead Node] New child Fc( died immediately.
+[2026-08-24 05:01:12]     [Disc & Sim] Prefix: FcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, Cl, F, O, c, n, o, s]
+[2026-08-24 05:01:12]     [Dead Node] New child FcO died immediately.
+[2026-08-24 05:05:21]     [Disc & Sim] Prefix: Fc1 | Eff: 95.00% | AvgLogP: 2.6718 | MAE: 1.7029 | R: 0.1821 | Found 6 children -- [1, [nH], c, n, o, s]
+[2026-08-24 05:09:25]     [Disc & Sim] Prefix: COc | Eff: 88.50% | AvgLogP: 2.5592 | MAE: 1.5978 | R: 0.2023 | Found 6 children -- [(, 1, C, S, c, n]
+[2026-08-24 05:13:29]     [Disc & Sim] Prefix: NSc | Eff: 58.50% | AvgLogP: 2.3595 | MAE: 1.4284 | R: 0.2397 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 05:17:35]     [Disc & Sim] Prefix: ClC( | Eff: 86.00% | AvgLogP: 2.7638 | MAE: 1.8008 | R: 0.1652 | Found 9 children -- [(, 1, =, C, F, N, O, S, c]
+[2026-08-24 05:21:55]     [Disc & Sim] Prefix: O=n | Eff: 1.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children -- [(, 1, C, c]
+[2026-08-24 05:21:55]     [Dead Node] New child O=n died immediately.
+[2026-08-24 05:25:57]     [Disc & Sim] Prefix: O=1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, N, [nH], c, n]
+[2026-08-24 05:25:57]     [Dead Node] New child O=1 died immediately.
+[2026-08-24 05:25:57] Loop 110/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 05:30:13]     [Disc & Sim] Prefix: O=C | Eff: 95.50% | AvgLogP: 2.4887 | MAE: 1.5948 | R: 0.2029 | Found 5 children -- [(, 1, =, C, N]
+[2026-08-24 05:34:31]     [Disc & Sim] Prefix: [H]cO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 05:34:31]     [Dead Node] New child [H]cO died immediately.
+[2026-08-24 05:38:31]     [Disc & Sim] Prefix: [H]cn | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, 1, =, C, F, N, S, [nH], c, n, o, s]
+[2026-08-24 05:38:31]     [Dead Node] New child [H]cn died immediately.
+[2026-08-24 05:42:46]     [Disc & Sim] Prefix: [H]cC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, o]
+[2026-08-24 05:42:46]     [Dead Node] New child [H]cC died immediately.
+[2026-08-24 05:46:57]     [Disc & Sim] Prefix: [H]c( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, N, O, [nH], c, n, o, s]
+[2026-08-24 05:46:57]     [Dead Node] New child [H]c( died immediately.
+[2026-08-24 05:51:00]     [Disc & Sim] Prefix: [H]cS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, [nH], c, n, s]
+[2026-08-24 05:51:00]     [Dead Node] New child [H]cS died immediately.
+[2026-08-24 05:55:19]     [Disc & Sim] Prefix: [H]c1 | Eff: 94.00% | AvgLogP: 2.3777 | MAE: 1.4573 | R: 0.2329 | Found 6 children -- [C, [nH], c, n, o, s]
+[2026-08-24 05:59:35]     [Disc & Sim] Prefix: FO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, N, O, S, c]
+[2026-08-24 05:59:35]     [Dead Node] New child FO( died immediately.
+[2026-08-24 06:03:37]     [Disc & Sim] Prefix: FO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 06:03:37]     [Dead Node] New child FO1 died immediately.
+[2026-08-24 06:07:53]     [Disc & Sim] Prefix: FOc | Eff: 91.00% | AvgLogP: 2.8965 | MAE: 1.9174 | R: 0.1470 | Found 5 children -- [(, 1, C, N, c]
+[2026-08-24 06:07:53] Loop 120/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 06:11:56]     [Disc & Sim] Prefix: BrC1 | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 06:11:56]     [Dead Node] New child BrC1 died immediately.
+[2026-08-24 06:16:02]     [Disc & Sim] Prefix: BrCN | Eff: 63.50% | AvgLogP: 2.5360 | MAE: 1.6344 | R: 0.1951 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-24 06:20:21]     [Disc & Sim] Prefix: CcS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, [nH], c, n, o]
+[2026-08-24 06:20:21]     [Dead Node] New child CcS died immediately.
+[2026-08-24 06:24:27]     [Disc & Sim] Prefix: CcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, S, c, n, s]
+[2026-08-24 06:24:27]     [Dead Node] New child CcC died immediately.
+[2026-08-24 06:28:34]     [Disc & Sim] Prefix: Cc= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, N, O, [nH], c, n, o, s]
+[2026-08-24 06:28:34]     [Dead Node] New child Cc= died immediately.
+[2026-08-24 06:32:47]     [Disc & Sim] Prefix: Cc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, 1, =, C, N, O, S, [nH], c, n, o, s]
+[2026-08-24 06:32:47]     [Dead Node] New child Cc( died immediately.
+[2026-08-24 06:36:56]     [Disc & Sim] Prefix: CcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, C, N, c, n]
+[2026-08-24 06:36:56]     [Dead Node] New child CcO died immediately.
+[2026-08-24 06:41:01]     [Disc & Sim] Prefix: Cc1 | Eff: 95.00% | AvgLogP: 2.5994 | MAE: 1.6501 | R: 0.1920 | Found 6 children -- [=, C, O, c, n, o]
+[2026-08-24 06:45:11]     [Disc & Sim] Prefix: N#( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 06:45:11]     [Dead Node] New child N#( died immediately.
+[2026-08-24 06:49:21]     [Disc & Sim] Prefix: N#S | Eff: 80.50% | AvgLogP: 3.1491 | MAE: 2.1950 | R: 0.1114 | Found 7 children -- [(, 1, =, C, c, n, s]
+[2026-08-24 06:49:21] Loop 130/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 06:53:30]     [Disc & Sim] Prefix: OOO | Eff: 22.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 06:53:30]     [Dead Node] New child OOO died immediately.
+[2026-08-24 06:57:50]     [Disc & Sim] Prefix: OO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, [nH], c, n, o]
+[2026-08-24 06:57:50]     [Dead Node] New child OO1 died immediately.
+[2026-08-24 07:01:58]     [Disc & Sim] Prefix: OOS | Eff: 69.00% | AvgLogP: 2.5127 | MAE: 1.5750 | R: 0.2070 | Found 6 children -- [(, 1, C, N, c, n]
+[2026-08-24 07:06:12]     [Disc & Sim] Prefix: [H]C= | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 07:06:12]     [Dead Node] New child [H]C= died immediately.
+[2026-08-24 07:10:29]     [Disc & Sim] Prefix: [H]C1 | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, N, O, S, [nH], c, n]
+[2026-08-24 07:10:29]     [Dead Node] New child [H]C1 died immediately.
+[2026-08-24 07:14:32]     [Disc & Sim] Prefix: [H]Cn | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 07:14:32]     [Dead Node] New child [H]Cn died immediately.
+[2026-08-24 07:18:52]     [Disc & Sim] Prefix: [H]CO | Eff: 66.50% | AvgLogP: 2.0467 | MAE: 1.1570 | R: 0.3144 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 07:23:05]     [Disc & Sim] Prefix: ClOS | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 07:23:05]     [Dead Node] New child ClOS died immediately.
+[2026-08-24 07:27:16]     [Disc & Sim] Prefix: ClOO | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 07:27:16]     [Dead Node] New child ClOO died immediately.
+[2026-08-24 07:31:27]     [Disc & Sim] Prefix: ClOC | Eff: 87.00% | AvgLogP: 2.6551 | MAE: 1.7191 | R: 0.1792 | Found 5 children -- [(, 1, C, c, n]
+[2026-08-24 07:31:27] Loop 140/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 07:35:41]     [Disc & Sim] Prefix: CSC | Eff: 79.50% | AvgLogP: 2.6044 | MAE: 1.6689 | R: 0.1885 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 07:39:51]     [Disc & Sim] Prefix: [H]#1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 07:39:51]     [Dead Node] New child [H]#1 died immediately.
+[2026-08-24 07:44:00]     [Disc & Sim] Prefix: [H]#S | Eff: 66.00% | AvgLogP: 2.2658 | MAE: 1.4021 | R: 0.2461 | Found 11 children -- [(, 1, =, C, N, S, [nH], c, n, o, s]
+[2026-08-24 07:48:12]     [Disc & Sim] Prefix: BrO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, O, [nH], c, n, o, s]
+[2026-08-24 07:48:12]     [Dead Node] New child BrO1 died immediately.
+[2026-08-24 07:52:21]     [Disc & Sim] Prefix: BrOc | Eff: 81.50% | AvgLogP: 3.1793 | MAE: 2.1843 | R: 0.1126 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 07:56:31]     [Disc & Sim] Prefix: FSN | Eff: 46.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, S, c, n, o]
+[2026-08-24 07:56:31]     [Dead Node] New child FSN died immediately.
+[2026-08-24 08:00:43]     [Disc & Sim] Prefix: FSn | Eff: 20.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, S, [nH], c, n]
+[2026-08-24 08:00:43]     [Dead Node] New child FSn died immediately.
+[2026-08-24 08:04:51]     [Disc & Sim] Prefix: FS( | Eff: 76.00% | AvgLogP: 2.3811 | MAE: 1.4899 | R: 0.2254 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, o]
+[2026-08-24 08:08:44]     [Disc & Sim] Prefix: N=C | Eff: 91.50% | AvgLogP: 2.6482 | MAE: 1.7290 | R: 0.1775 | Found 6 children -- [(, 1, =, C, N, c]
+[2026-08-24 08:12:34]     [Disc & Sim] Prefix: OS1 | Eff: 10.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 08:12:34]     [Dead Node] New child OS1 died immediately.
+[2026-08-24 08:12:34] Loop 150/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 08:16:14]     [Disc & Sim] Prefix: OSn | Eff: 17.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, O, S, c, n]
+[2026-08-24 08:16:14]     [Dead Node] New child OSn died immediately.
+[2026-08-24 08:20:04]     [Disc & Sim] Prefix: OSO | Eff: 25.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, [nH], c, n]
+[2026-08-24 08:20:04]     [Dead Node] New child OSO died immediately.
+[2026-08-24 08:24:09]     [Disc & Sim] Prefix: OSN | Eff: 75.00% | AvgLogP: 2.8652 | MAE: 1.8824 | R: 0.1522 | Found 7 children -- [(, 1, =, C, O, c, n]
+[2026-08-24 08:28:02]     [Disc & Sim] Prefix: Clc1 | Eff: 93.50% | AvgLogP: 3.0195 | MAE: 2.0419 | R: 0.1298 | Found 8 children -- [(, 1, =, [nH], c, n, o, s]
+[2026-08-24 08:32:04]     [Disc & Sim] Prefix: [H]Sn | Eff: 18.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, o]
+[2026-08-24 08:32:04]     [Dead Node] New child [H]Sn died immediately.
+[2026-08-24 08:36:09]     [Disc & Sim] Prefix: [H]S( | Eff: 74.50% | AvgLogP: 1.6375 | MAE: 1.0653 | R: 0.3446 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 08:40:03]     [Disc & Sim] Prefix: FNc | Eff: 55.50% | AvgLogP: 2.7298 | MAE: 1.8012 | R: 0.1651 | Found 8 children -- [(, 1, =, C, F, N, c, n]
+[2026-08-24 08:44:01]     [Disc & Sim] Prefix: CN1 | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 08:44:01]     [Dead Node] New child CN1 died immediately.
+[2026-08-24 08:48:07]     [Disc & Sim] Prefix: CNS | Eff: 35.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 08:48:07]     [Dead Node] New child CNS died immediately.
+[2026-08-24 08:52:13]     [Disc & Sim] Prefix: CNC | Eff: 77.50% | AvgLogP: 1.7259 | MAE: 0.9776 | R: 0.3762 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 08:52:13] Loop 160/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 08:56:18]     [Disc & Sim] Prefix: NNN | Eff: 42.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 08:56:18]     [Dead Node] New child NNN died immediately.
+[2026-08-24 09:00:23]     [Disc & Sim] Prefix: NNc | Eff: 51.50% | AvgLogP: 1.9176 | MAE: 1.0372 | R: 0.3544 | Found 8 children -- [(, 1, =, C, N, [nH], c, n]
+[2026-08-24 09:04:29]     [Disc & Sim] Prefix: [H]=c | Eff: 35.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, O, c, n]
+[2026-08-24 09:04:29]     [Dead Node] New child [H]=c died immediately.
+[2026-08-24 09:08:28]     [Disc & Sim] Prefix: [H]=S | Eff: 77.00% | AvgLogP: 2.4223 | MAE: 1.5710 | R: 0.2078 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 09:12:45]     [Disc & Sim] Prefix: OC= | Eff: 12.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [#, (, 1, 2, =, C, N, O, c, n]
+[2026-08-24 09:12:45]     [Dead Node] New child OC= died immediately.
+[2026-08-24 09:16:41]     [Disc & Sim] Prefix: OCc | Eff: 60.00% | AvgLogP: 1.8037 | MAE: 1.0706 | R: 0.3428 | Found 9 children -- [(, 1, =, C, F, N, O, c, n]
+[2026-08-24 09:20:56]     [Disc & Sim] Prefix: COn | Eff: 14.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, C, N, c, n]
+[2026-08-24 09:20:56]     [Dead Node] New child COn died immediately.
+[2026-08-24 09:25:12]     [Disc & Sim] Prefix: CON | Eff: 31.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 09:25:12]     [Dead Node] New child CON died immediately.
+[2026-08-24 09:29:17]     [Disc & Sim] Prefix: COO | Eff: 35.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 09:29:17]     [Dead Node] New child COO died immediately.
+[2026-08-24 09:33:29]     [Disc & Sim] Prefix: CO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, C, N, [nH], c, n, o, s]
+[2026-08-24 09:33:29]     [Dead Node] New child CO1 died immediately.
+[2026-08-24 09:33:29] Loop 170/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 09:37:44]     [Disc & Sim] Prefix: CO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 09:37:44]     [Dead Node] New child CO( died immediately.
+[2026-08-24 09:41:54]     [Disc & Sim] Prefix: COC | Eff: 83.00% | AvgLogP: 2.0253 | MAE: 1.2435 | R: 0.2884 | Found 6 children -- [(, 1, C, O, c, n]
+[2026-08-24 09:45:59]     [Disc & Sim] Prefix: Brcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, c, n, o, s]
+[2026-08-24 09:45:59]     [Dead Node] New child Brcc died immediately.
+[2026-08-24 09:50:06]     [Disc & Sim] Prefix: BrcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, C, F, O, S, [nH], c, n, o]
+[2026-08-24 09:50:06]     [Dead Node] New child BrcC died immediately.
+[2026-08-24 09:54:26]     [Disc & Sim] Prefix: BrcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, c, n, o]
+[2026-08-24 09:54:26]     [Dead Node] New child BrcO died immediately.
+[2026-08-24 09:58:24]     [Disc & Sim] Prefix: Brc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, N, O, [nH], c, n, o]
+[2026-08-24 09:58:24]     [Dead Node] New child Brc( died immediately.
+[2026-08-24 10:02:42]     [Disc & Sim] Prefix: BrcS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 10:02:42]     [Dead Node] New child BrcS died immediately.
+[2026-08-24 10:06:53]     [Disc & Sim] Prefix: BrcN | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, O, [nH], c, n, o]
+[2026-08-24 10:06:53]     [Dead Node] New child BrcN died immediately.
+[2026-08-24 10:11:03]     [Disc & Sim] Prefix: Brc1 | Eff: 95.50% | AvgLogP: 3.0950 | MAE: 2.1321 | R: 0.1186 | Found 7 children -- [(, C, [nH], c, n, o, s]
+[2026-08-24 10:15:18]     [Disc & Sim] Prefix: NC1 | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 10:15:18]     [Dead Node] New child NC1 died immediately.
+[2026-08-24 10:15:18] Loop 180/500 | BestAvgReward: 0.4149 | BestAvgPrefix: NN
+[2026-08-24 10:19:37]     [Disc & Sim] Prefix: NC= | Eff: 14.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 10:19:37]     [Dead Node] New child NC= died immediately.
+[2026-08-24 10:23:44]     [Disc & Sim] Prefix: NCn | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 10:23:44]     [Dead Node] New child NCn died immediately.
+[2026-08-24 10:28:04]     [Disc & Sim] Prefix: NCO | Eff: 53.00% | AvgLogP: 1.4331 | MAE: 0.7778 | R: 0.4594 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 10:32:11]     [Disc & Sim] Prefix: NON | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 10:32:11]     [Dead Node] New child NON died immediately.
+[2026-08-24 10:36:30]     [Disc & Sim] Prefix: NOO | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, S, [nH], c, n, o]
+[2026-08-24 10:36:30]     [Dead Node] New child NOO died immediately.
+[2026-08-24 10:40:50]     [Disc & Sim] Prefix: NOC | Eff: 88.00% | AvgLogP: 1.5494 | MAE: 0.9662 | R: 0.3805 | Found 7 children -- [(, 1, C, N, S, c, n]
+[2026-08-24 10:44:53]     [Disc & Sim] Prefix: ONC | Eff: 93.50% | AvgLogP: 2.1652 | MAE: 1.2828 | R: 0.2773 | Found 6 children -- [(, 1, C, N, c, n]
+[2026-08-24 10:49:13]     [Disc & Sim] Prefix: Ccc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 10:49:13]     [Dead Node] New child Ccc died immediately.
+[2026-08-24 10:53:32]     [Disc & Sim] Prefix: Cc1c | Eff: 95.50% | AvgLogP: 2.6253 | MAE: 1.6539 | R: 0.1913 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-24 10:57:48]     [Disc & Sim] Prefix: ClS= | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-24 10:57:48]     [Dead Node] New child ClS= died immediately.
+[2026-08-24 10:57:48] Loop 190/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 11:02:04]     [Disc & Sim] Prefix: ClS( | Eff: 78.00% | AvgLogP: 2.7323 | MAE: 1.8077 | R: 0.1640 | Found 10 children -- [(, 1, =, C, F, N, O, [nH], c, n]
+[2026-08-24 11:06:22]     [Disc & Sim] Prefix: FC( | Eff: 89.00% | AvgLogP: 2.5014 | MAE: 1.5754 | R: 0.2069 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 11:10:34]     [Disc & Sim] Prefix: NcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, [nH], c, n, s]
+[2026-08-24 11:10:34]     [Dead Node] New child NcC died immediately.
+[2026-08-24 11:14:40]     [Disc & Sim] Prefix: Ncc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 11:14:40]     [Dead Node] New child Ncc died immediately.
+[2026-08-24 11:19:00]     [Disc & Sim] Prefix: NcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, F, c, n, o]
+[2026-08-24 11:19:00]     [Dead Node] New child NcO died immediately.
+[2026-08-24 11:23:14]     [Disc & Sim] Prefix: Nc1C | Eff: 5.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, C, N, [nH], c, n, o, s]
+[2026-08-24 11:23:14]     [Dead Node] New child Nc1C died immediately.
+[2026-08-24 11:27:26]     [Disc & Sim] Prefix: Nc1c | Eff: 94.50% | AvgLogP: 2.2961 | MAE: 1.4027 | R: 0.2459 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-24 11:31:46]     [Disc & Sim] Prefix: [H]N1 | Eff: 22.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, O, [nH], c, n, o, s]
+[2026-08-24 11:31:46]     [Dead Node] New child [H]N1 died immediately.
+[2026-08-24 11:36:06]     [Disc & Sim] Prefix: [H]N( | Eff: 71.50% | AvgLogP: 1.7680 | MAE: 1.0951 | R: 0.3345 | Found 9 children -- [(, 1, =, C, N, O, S, [nH], c]
+[2026-08-24 11:40:05]     [Disc & Sim] Prefix: Oc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, 1, =, C, N, O, S, [nH], c, n, o, s]
+[2026-08-24 11:40:05]     [Dead Node] New child Oc( died immediately.
+[2026-08-24 11:40:05] Loop 200/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 11:44:25]     [Disc & Sim] Prefix: OcS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, [nH], c, n, o]
+[2026-08-24 11:44:25]     [Dead Node] New child OcS died immediately.
+[2026-08-24 11:48:45]     [Disc & Sim] Prefix: Ocn | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, O, [nH], c, n, o, s]
+[2026-08-24 11:48:45]     [Dead Node] New child Ocn died immediately.
+[2026-08-24 11:52:44]     [Disc & Sim] Prefix: Oc1n | Eff: 94.00% | AvgLogP: 1.8894 | MAE: 1.1229 | R: 0.3253 | Found 6 children -- [N, [nH], c, n, o, s]
+[2026-08-24 11:56:41]     [Disc & Sim] Prefix: [H]ON | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, O, S, c, n]
+[2026-08-24 11:56:41]     [Dead Node] New child [H]ON died immediately.
+[2026-08-24 12:00:26]     [Disc & Sim] Prefix: [H]O( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 12:00:26]     [Dead Node] New child [H]O( died immediately.
+[2026-08-24 12:04:02]     [Disc & Sim] Prefix: [H]O1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, O, [nH], c, n, o]
+[2026-08-24 12:04:02]     [Dead Node] New child [H]O1 died immediately.
+[2026-08-24 12:08:02]     [Disc & Sim] Prefix: [H]OC | Eff: 85.00% | AvgLogP: 1.5878 | MAE: 1.0599 | R: 0.3465 | Found 7 children -- [(, 1, C, N, S, c, n]
+[2026-08-24 12:12:06]     [Disc & Sim] Prefix: NS( | Eff: 82.00% | AvgLogP: 1.4412 | MAE: 0.9628 | R: 0.3818 | Found 10 children -- [(, -, 1, =, C, N, O, S, c, n]
+[2026-08-24 12:16:08]     [Disc & Sim] Prefix: BrSS | Eff: 44.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 12:16:08]     [Dead Node] New child BrSS died immediately.
+[2026-08-24 12:20:10]     [Disc & Sim] Prefix: BrS( | Eff: 73.00% | AvgLogP: 2.8971 | MAE: 1.9509 | R: 0.1421 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 12:20:10] Loop 210/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 12:24:15]     [Disc & Sim] Prefix: O=c | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children -- [(, 1, C, c]
+[2026-08-24 12:24:15]     [Dead Node] New child O=c died immediately.
+[2026-08-24 12:28:19]     [Disc & Sim] Prefix: O=S | Eff: 93.00% | AvgLogP: 2.1874 | MAE: 1.2811 | R: 0.2777 | Found 6 children -- [(, 1, C, N, c, n]
+[2026-08-24 12:32:31]     [Disc & Sim] Prefix: CC( | Eff: 85.00% | AvgLogP: 2.3771 | MAE: 1.4694 | R: 0.2301 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 12:36:42]     [Disc & Sim] Prefix: Fcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, c, n, o, s]
+[2026-08-24 12:36:42]     [Dead Node] New child Fcc died immediately.
+[2026-08-24 12:40:45]     [Disc & Sim] Prefix: FcN | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, S, [nH], c, n, o, s]
+[2026-08-24 12:40:45]     [Dead Node] New child FcN died immediately.
+[2026-08-24 12:45:04]     [Disc & Sim] Prefix: FcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, N, O, c, n]
+[2026-08-24 12:45:04]     [Dead Node] New child FcC died immediately.
+[2026-08-24 12:49:20]     [Disc & Sim] Prefix: Fc1c | Eff: 96.00% | AvgLogP: 2.7328 | MAE: 1.7881 | R: 0.1673 | Found 5 children -- [(, c, n, o, s]
+[2026-08-24 12:53:27]     [Disc & Sim] Prefix: [H]CN | Eff: 73.50% | AvgLogP: 1.7611 | MAE: 1.1319 | R: 0.3224 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-24 12:57:53]     [Disc & Sim] Prefix: NCC | Eff: 83.00% | AvgLogP: 1.2155 | MAE: 0.8828 | R: 0.4136 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 13:02:14]     [Disc & Sim] Prefix: ClN1 | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, c, n, o, s]
+[2026-08-24 13:02:14]     [Dead Node] New child ClN1 died immediately.
+[2026-08-24 13:02:14] Loop 220/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 13:06:18]     [Disc & Sim] Prefix: ClNN | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, N, O, S, c, n, o, s]
+[2026-08-24 13:06:18]     [Dead Node] New child ClNN died immediately.
+[2026-08-24 13:10:41]     [Disc & Sim] Prefix: ClNS | Eff: 37.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 13:10:41]     [Dead Node] New child ClNS died immediately.
+[2026-08-24 13:14:54]     [Disc & Sim] Prefix: ClNO | Eff: 40.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 13:14:54]     [Dead Node] New child ClNO died immediately.
+[2026-08-24 13:19:06]     [Disc & Sim] Prefix: ClNC | Eff: 81.00% | AvgLogP: 2.3376 | MAE: 1.4992 | R: 0.2233 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 13:23:33]     [Disc & Sim] Prefix: NNO | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 13:23:33]     [Dead Node] New child NNO died immediately.
+[2026-08-24 13:27:51]     [Disc & Sim] Prefix: NNCn | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 13:27:51]     [Dead Node] New child NNCn died immediately.
+[2026-08-24 13:31:59]     [Disc & Sim] Prefix: NNCN | Eff: 26.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-24 13:31:59]     [Dead Node] New child NNCN died immediately.
+[2026-08-24 13:36:22]     [Disc & Sim] Prefix: NNC= | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, s]
+[2026-08-24 13:36:22]     [Dead Node] New child NNC= died immediately.
+[2026-08-24 13:40:32]     [Disc & Sim] Prefix: NNCc | Eff: 68.00% | AvgLogP: 1.6740 | MAE: 0.9225 | R: 0.3975 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 13:44:49]     [Disc & Sim] Prefix: [H]SS | Eff: 43.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, N, O, S, c, n, o]
+[2026-08-24 13:44:49]     [Dead Node] New child [H]SS died immediately.
+[2026-08-24 13:44:49] Loop 230/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 13:49:09]     [Disc & Sim] Prefix: [H]Sc | Eff: 68.00% | AvgLogP: 2.7622 | MAE: 1.8105 | R: 0.1636 | Found 10 children -- [(, 1, =, C, N, S, c, n, o, s]
+[2026-08-24 13:53:22]     [Disc & Sim] Prefix: OOn | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, O, c, n, s]
+[2026-08-24 13:53:22]     [Dead Node] New child OOn died immediately.
+[2026-08-24 13:57:33]     [Disc & Sim] Prefix: OOc | Eff: 74.50% | AvgLogP: 2.4385 | MAE: 1.4776 | R: 0.2282 | Found 8 children -- [(, 1, C, N, O, c, n, o]
+[2026-08-24 14:01:56]     [Disc & Sim] Prefix: N=( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, N, O, c, n]
+[2026-08-24 14:01:56]     [Dead Node] New child N=( died immediately.
+[2026-08-24 14:06:16]     [Disc & Sim] Prefix: N=1 | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 14:06:16]     [Dead Node] New child N=1 died immediately.
+[2026-08-24 14:10:19]     [Disc & Sim] Prefix: N=N | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, =, C, N, c]
+[2026-08-24 14:10:19]     [Dead Node] New child N=N died immediately.
+[2026-08-24 14:14:37]     [Disc & Sim] Prefix: N=O | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, c, n, o]
+[2026-08-24 14:14:37]     [Dead Node] New child N=O died immediately.
+[2026-08-24 14:18:55]     [Disc & Sim] Prefix: N=S | Eff: 72.00% | AvgLogP: 2.7774 | MAE: 1.8099 | R: 0.1637 | Found 6 children -- [(, 1, =, C, c, n]
+[2026-08-24 14:23:04]     [Disc & Sim] Prefix: CS( | Eff: 74.50% | AvgLogP: 2.1755 | MAE: 1.3634 | R: 0.2558 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 14:27:16]     [Disc & Sim] Prefix: FSO | Eff: 42.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, N, S, [nH], c, n, s]
+[2026-08-24 14:27:16]     [Dead Node] New child FSO died immediately.
+[2026-08-24 14:27:16] Loop 240/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 14:31:34]     [Disc & Sim] Prefix: FSC | Eff: 86.00% | AvgLogP: 3.3869 | MAE: 2.3876 | R: 0.0918 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 14:35:46]     [Disc & Sim] Prefix: BrCC | Eff: 83.50% | AvgLogP: 2.7791 | MAE: 1.8047 | R: 0.1645 | Found 10 children -- [#, (, 1, =, C, N, O, S, c, n]
+[2026-08-24 14:40:05]     [Disc & Sim] Prefix: ClCN | Eff: 69.50% | AvgLogP: 2.4124 | MAE: 1.4622 | R: 0.2317 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 14:44:26]     [Disc & Sim] Prefix: OCC | Eff: 92.50% | AvgLogP: 1.9603 | MAE: 1.2747 | R: 0.2795 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 14:48:32]     [Disc & Sim] Prefix: NOn | Eff: 4.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, O, c, n]
+[2026-08-24 14:48:32]     [Dead Node] New child NOn died immediately.
+[2026-08-24 14:52:52]     [Disc & Sim] Prefix: NO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, 2, =, C, F, N, O, c, n]
+[2026-08-24 14:52:52]     [Dead Node] New child NO( died immediately.
+[2026-08-24 14:57:11]     [Disc & Sim] Prefix: NOCn | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-24 14:57:11]     [Dead Node] New child NOCn died immediately.
+[2026-08-24 15:01:16]     [Disc & Sim] Prefix: NOC( | Eff: 82.00% | AvgLogP: 1.5830 | MAE: 0.9417 | R: 0.3900 | Found 7 children -- [(, 1, =, C, N, O, c]
+[2026-08-24 15:05:22]     [Disc & Sim] Prefix: [H]cc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, c, n, o]
+[2026-08-24 15:05:22]     [Dead Node] New child [H]cc died immediately.
+[2026-08-24 15:09:44]     [Disc & Sim] Prefix: [H]c1n | Eff: 92.00% | AvgLogP: 2.2136 | MAE: 1.2975 | R: 0.2732 | Found 7 children -- [(, C, [nH], c, n, o, s]
+[2026-08-24 15:09:44] Loop 250/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 15:13:58]     [Disc & Sim] Prefix: CN( | Eff: 71.50% | AvgLogP: 2.2006 | MAE: 1.3016 | R: 0.2721 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 15:18:09]     [Disc & Sim] Prefix: N#C | Eff: 87.00% | AvgLogP: 2.4847 | MAE: 1.5188 | R: 0.2190 | Found 5 children -- [(, =, C, N, c]
+[2026-08-24 15:22:30]     [Disc & Sim] Prefix: OS( | Eff: 48.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 15:22:30]     [Dead Node] New child OS( died immediately.
+[2026-08-24 15:26:48]     [Disc & Sim] Prefix: OSS | Eff: 74.00% | AvgLogP: 3.3202 | MAE: 2.3249 | R: 0.0978 | Found 9 children -- [(, 1, =, C, N, S, c, n, o]
+[2026-08-24 15:31:00]     [Disc & Sim] Prefix: ClO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, c, n, s]
+[2026-08-24 15:31:00]     [Dead Node] New child ClO( died immediately.
+[2026-08-24 15:35:28]     [Disc & Sim] Prefix: ClON | Eff: 41.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 15:35:28]     [Dead Node] New child ClON died immediately.
+[2026-08-24 15:39:37]     [Disc & Sim] Prefix: ClOn | Eff: 7.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, c, n, o, s]
+[2026-08-24 15:39:37]     [Dead Node] New child ClOn died immediately.
+[2026-08-24 15:43:43]     [Disc & Sim] Prefix: ClOc | Eff: 86.50% | AvgLogP: 3.1362 | MAE: 2.1504 | R: 0.1164 | Found 5 children -- [(, 1, C, c, n]
+[2026-08-24 15:47:40]     [Disc & Sim] Prefix: [H]#c | Eff: 53.00% | AvgLogP: 2.3644 | MAE: 1.5202 | R: 0.2187 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 15:51:35]     [Disc & Sim] Prefix: COCC | Eff: 83.50% | AvgLogP: 1.9124 | MAE: 1.1379 | R: 0.3205 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-24 15:51:35] Loop 260/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 15:55:42]     [Disc & Sim] Prefix: BrNS | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 15:55:42]     [Dead Node] New child BrNS died immediately.
+[2026-08-24 15:59:51]     [Disc & Sim] Prefix: BrNN | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, [nH], c, n, s]
+[2026-08-24 15:59:51]     [Dead Node] New child BrNN died immediately.
+[2026-08-24 16:03:57]     [Disc & Sim] Prefix: BrNC | Eff: 80.50% | AvgLogP: 2.5994 | MAE: 1.6693 | R: 0.1884 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 16:08:12]     [Disc & Sim] Prefix: FOO | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 16:08:12]     [Dead Node] New child FOO died immediately.
+[2026-08-24 16:12:31]     [Disc & Sim] Prefix: FOC | Eff: 84.50% | AvgLogP: 2.3571 | MAE: 1.4425 | R: 0.2363 | Found 4 children -- [(, 1, C, c]
+[2026-08-24 16:16:37]     [Disc & Sim] Prefix: NSC | Eff: 84.50% | AvgLogP: 2.5146 | MAE: 1.5832 | R: 0.2053 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 16:20:45]     [Disc & Sim] Prefix: CSN | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, S, c, n, o, s]
+[2026-08-24 16:20:45]     [Dead Node] New child CSN died immediately.
+[2026-08-24 16:25:04]     [Disc & Sim] Prefix: CSn | Eff: 19.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 16:25:04]     [Dead Node] New child CSn died immediately.
+[2026-08-24 16:29:11]     [Disc & Sim] Prefix: CSS | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, [nH], c, n]
+[2026-08-24 16:29:11]     [Dead Node] New child CSS died immediately.
+[2026-08-24 16:33:31]     [Disc & Sim] Prefix: CS1 | Eff: 19.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 16:33:31]     [Dead Node] New child CS1 died immediately.
+[2026-08-24 16:33:31] Loop 270/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 16:37:44]     [Disc & Sim] Prefix: CSO | Eff: 44.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, [nH], c, n]
+[2026-08-24 16:37:44]     [Dead Node] New child CSO died immediately.
+[2026-08-24 16:42:05]     [Disc & Sim] Prefix: CSc | Eff: 72.00% | AvgLogP: 2.9582 | MAE: 1.9694 | R: 0.1395 | Found 7 children -- [(, 1, =, C, O, c, n]
+[2026-08-24 16:46:25]     [Disc & Sim] Prefix: [H]=n | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 16:46:25]     [Dead Node] New child [H]=n died immediately.
+[2026-08-24 16:50:38]     [Disc & Sim] Prefix: [H]=O | Eff: 26.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 16:50:38]     [Dead Node] New child [H]=O died immediately.
+[2026-08-24 16:54:58]     [Disc & Sim] Prefix: [H]=N | Eff: 81.00% | AvgLogP: 2.0458 | MAE: 1.2610 | R: 0.2834 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 16:59:22]     [Disc & Sim] Prefix: ONS | Eff: 74.50% | AvgLogP: 2.0547 | MAE: 1.3374 | R: 0.2625 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 17:03:40]     [Disc & Sim] Prefix: NCc | Eff: 50.50% | AvgLogP: 1.5331 | MAE: 0.8957 | R: 0.4083 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 17:08:00]     [Disc & Sim] Prefix: FCC | Eff: 83.00% | AvgLogP: 2.2487 | MAE: 1.3845 | R: 0.2504 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 17:12:21]     [Disc & Sim] Prefix: ClS1 | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, c, n, o]
+[2026-08-24 17:12:21]     [Dead Node] New child ClS1 died immediately.
+[2026-08-24 17:16:35]     [Disc & Sim] Prefix: ClSO | Eff: 38.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, S, c, n, o]
+[2026-08-24 17:16:35]     [Dead Node] New child ClSO died immediately.
+[2026-08-24 17:16:35] Loop 280/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 17:20:53]     [Disc & Sim] Prefix: ClSN | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, S, c, n]
+[2026-08-24 17:20:53]     [Dead Node] New child ClSN died immediately.
+[2026-08-24 17:25:13]     [Disc & Sim] Prefix: ClSC | Eff: 78.50% | AvgLogP: 3.5906 | MAE: 2.5978 | R: 0.0744 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 17:29:26]     [Disc & Sim] Prefix: Nc1n | Eff: 94.50% | AvgLogP: 1.8775 | MAE: 1.1152 | R: 0.3279 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-24 17:33:51]     [Disc & Sim] Prefix: BrO= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 17:33:51]     [Dead Node] New child BrO= died immediately.
+[2026-08-24 17:38:00]     [Disc & Sim] Prefix: BrOS | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, S, c, n]
+[2026-08-24 17:38:00]     [Dead Node] New child BrOS died immediately.
+[2026-08-24 17:42:20]     [Disc & Sim] Prefix: BrOO | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 17:42:20]     [Dead Node] New child BrOO died immediately.
+[2026-08-24 17:46:42]     [Disc & Sim] Prefix: BrOC | Eff: 85.00% | AvgLogP: 2.7302 | MAE: 1.7667 | R: 0.1709 | Found 7 children -- [(, 1, =, C, N, O, c]
+[2026-08-24 17:50:54]     [Disc & Sim] Prefix: [H]Nc | Eff: 61.50% | AvgLogP: 1.8665 | MAE: 1.0568 | R: 0.3476 | Found 7 children -- [(, 1, =, C, c, n, s]
+[2026-08-24 17:55:13]     [Disc & Sim] Prefix: CCc | Eff: 63.00% | AvgLogP: 2.8080 | MAE: 1.8592 | R: 0.1558 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 17:59:34]     [Disc & Sim] Prefix: Oc1( | Eff: 3.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, =, C, F, N, O, [nH], c, n, o, s]
+[2026-08-24 17:59:34]     [Dead Node] New child Oc1( died immediately.
+[2026-08-24 17:59:34] Loop 290/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 18:03:54]     [Disc & Sim] Prefix: Oc1C | Eff: 14.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, 2, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:03:54]     [Dead Node] New child Oc1C died immediately.
+[2026-08-24 18:08:14]     [Disc & Sim] Prefix: Oc1o | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, C, N, [nH], c, n, o, s]
+[2026-08-24 18:08:14]     [Dead Node] New child Oc1o died immediately.
+[2026-08-24 18:12:35]     [Disc & Sim] Prefix: Oc1[nH] | Eff: 17.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 18:12:35]     [Dead Node] New child Oc1[nH] died immediately.
+[2026-08-24 18:16:45]     [Disc & Sim] Prefix: Oc1s | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:16:45]     [Dead Node] New child Oc1s died immediately.
+[2026-08-24 18:21:06]     [Disc & Sim] Prefix: Oc1= | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 2, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:21:06]     [Dead Node] New child Oc1= died immediately.
+[2026-08-24 18:25:26]     [Disc & Sim] Prefix: Oc1c | Eff: 96.00% | AvgLogP: 2.1394 | MAE: 1.2948 | R: 0.2739 | Found 5 children -- [(, [nH], c, n, s]
+[2026-08-24 18:29:34]     [Disc & Sim] Prefix: NNcn | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 13 children -- [(, ), 1, 2, =, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:29:34]     [Dead Node] New child NNcn died immediately.
+[2026-08-24 18:33:41]     [Disc & Sim] Prefix: NNc[nH] | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, =, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:33:41]     [Dead Node] New child NNc[nH] died immediately.
+[2026-08-24 18:38:04]     [Disc & Sim] Prefix: NNcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, 2, =, C, O, [nH], c, n, o, s]
+[2026-08-24 18:38:04]     [Dead Node] New child NNcc died immediately.
+[2026-08-24 18:42:10]     [Disc & Sim] Prefix: NNc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, =, C, N, O, [nH], c, n, o, s]
+[2026-08-24 18:42:10]     [Dead Node] New child NNc( died immediately.
+[2026-08-24 18:42:10] Loop 300/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 18:46:24]     [Disc & Sim] Prefix: NNcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, =, C, N, O, S, c, n, o, s]
+[2026-08-24 18:46:24]     [Dead Node] New child NNcC died immediately.
+[2026-08-24 18:50:39]     [Disc & Sim] Prefix: NNc= | Eff: 1.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, o]
+[2026-08-24 18:50:39]     [Dead Node] New child NNc= died immediately.
+[2026-08-24 18:54:56]     [Disc & Sim] Prefix: NNc1 | Eff: 87.50% | AvgLogP: 1.7559 | MAE: 1.0314 | R: 0.3565 | Found 9 children -- [), =, C, N, O, [nH], c, n, o]
+[2026-08-24 18:59:06]     [Disc & Sim] Prefix: [H]OS | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, =, C, c, n]
+[2026-08-24 18:59:06]     [Dead Node] New child [H]OS died immediately.
+[2026-08-24 19:03:22]     [Disc & Sim] Prefix: [H]OO | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 19:03:22]     [Dead Node] New child [H]OO died immediately.
+[2026-08-24 19:07:36]     [Disc & Sim] Prefix: [H]OC1 | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 19:07:36]     [Dead Node] New child [H]OC1 died immediately.
+[2026-08-24 19:11:49]     [Disc & Sim] Prefix: [H]OC( | Eff: 89.50% | AvgLogP: 1.9901 | MAE: 1.1865 | R: 0.3053 | Found 7 children -- [(, 1, =, C, N, O, c]
+[2026-08-24 19:16:06]     [Disc & Sim] Prefix: FN( | Eff: 72.00% | AvgLogP: 2.4900 | MAE: 1.6058 | R: 0.2007 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 19:20:22]     [Disc & Sim] Prefix: NOc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, ), 1, =, C, N, c, n]
+[2026-08-24 19:20:22]     [Dead Node] New child NOc( died immediately.
+[2026-08-24 19:24:22]     [Disc & Sim] Prefix: NOcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-24 19:24:22]     [Dead Node] New child NOcc died immediately.
+[2026-08-24 19:24:22] Loop 310/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 19:28:15]     [Disc & Sim] Prefix: NOc1 | Eff: 94.50% | AvgLogP: 1.8780 | MAE: 1.0467 | R: 0.3511 | Found 3 children -- [O, c, n]
+[2026-08-24 19:31:54]     [Disc & Sim] Prefix: [H]Cc | Eff: 58.50% | AvgLogP: 2.4139 | MAE: 1.5126 | R: 0.2203 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-24 19:35:45]     [Disc & Sim] Prefix: O=( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 19:35:45]     [Dead Node] New child O=( died immediately.
+[2026-08-24 19:39:50]     [Disc & Sim] Prefix: O=SC | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, ), =, C, N, O, c, n]
+[2026-08-24 19:39:50]     [Dead Node] New child O=SC died immediately.
+[2026-08-24 19:43:47]     [Disc & Sim] Prefix: O=Sn | Eff: 1.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, [nH], c, n]
+[2026-08-24 19:43:47]     [Dead Node] New child O=Sn died immediately.
+[2026-08-24 19:47:50]     [Disc & Sim] Prefix: O=Sc | Eff: 3.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 19:47:50]     [Dead Node] New child O=Sc died immediately.
+[2026-08-24 19:51:55]     [Disc & Sim] Prefix: O=S( | Eff: 98.50% | AvgLogP: 2.3005 | MAE: 1.4080 | R: 0.2446 | Found 5 children -- [=, C, N, O, c]
+[2026-08-24 19:56:01]     [Disc & Sim] Prefix: NCN | Eff: 50.50% | AvgLogP: 1.1340 | MAE: 0.8389 | R: 0.4322 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 20:00:06]     [Disc & Sim] Prefix: BrS1 | Eff: 11.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, 1, 2, =, C, N, S, [nH], c, n, o, s]
+[2026-08-24 20:00:06]     [Dead Node] New child BrS1 died immediately.
+[2026-08-24 20:04:14]     [Disc & Sim] Prefix: BrSc | Eff: 67.00% | AvgLogP: 3.8180 | MAE: 2.8180 | R: 0.0597 | Found 9 children -- [(, 1, =, C, F, O, S, c, n]
+[2026-08-24 20:04:14] Loop 320/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 20:08:27]     [Disc & Sim] Prefix: N#1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 20:08:27]     [Dead Node] New child N#1 died immediately.
+[2026-08-24 20:12:32]     [Disc & Sim] Prefix: N#O | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, =, C, O, c]
+[2026-08-24 20:12:32]     [Dead Node] New child N#O died immediately.
+[2026-08-24 20:16:44]     [Disc & Sim] Prefix: N#c | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 20:16:44]     [Dead Node] New child N#c died immediately.
+[2026-08-24 20:20:55]     [Disc & Sim] Prefix: N#CC | Eff: 85.00% | AvgLogP: 2.4821 | MAE: 1.5662 | R: 0.2088 | Found 8 children -- [(, 1, C, N, O, S, c, n]
+[2026-08-24 20:25:03]     [Disc & Sim] Prefix: Cc1o | Eff: 16.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, C, [nH], c, n, o, s]
+[2026-08-24 20:25:03]     [Dead Node] New child Cc1o died immediately.
+[2026-08-24 20:29:15]     [Disc & Sim] Prefix: Cc1O | Eff: 7.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), C, N, [nH], c, n, o, s]
+[2026-08-24 20:29:15]     [Dead Node] New child Cc1O died immediately.
+[2026-08-24 20:33:26]     [Disc & Sim] Prefix: Cc1n | Eff: 94.50% | AvgLogP: 2.4152 | MAE: 1.5167 | R: 0.2194 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-24 20:37:36]     [Disc & Sim] Prefix: FON | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, o]
+[2026-08-24 20:37:36]     [Dead Node] New child FON died immediately.
+[2026-08-24 20:41:48]     [Disc & Sim] Prefix: FOCC | Eff: 78.00% | AvgLogP: 2.2181 | MAE: 1.3277 | R: 0.2651 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 20:45:56]     [Disc & Sim] Prefix: Clc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, 1, =, C, F, N, O, [nH], c, n, o, s]
+[2026-08-24 20:45:56]     [Dead Node] New child Clc( died immediately.
+[2026-08-24 20:45:56] Loop 330/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 20:50:13]     [Disc & Sim] Prefix: ClcS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 20:50:13]     [Dead Node] New child ClcS died immediately.
+[2026-08-24 20:54:33]     [Disc & Sim] Prefix: ClcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, C, N, S, c, n, o]
+[2026-08-24 20:54:33]     [Dead Node] New child ClcC died immediately.
+[2026-08-24 20:58:44]     [Disc & Sim] Prefix: ClcN | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, [nH], c, n, o, s]
+[2026-08-24 20:58:44]     [Dead Node] New child ClcN died immediately.
+[2026-08-24 21:03:00]     [Disc & Sim] Prefix: ClcO | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, [nH], c, n, o]
+[2026-08-24 21:03:00]     [Dead Node] New child ClcO died immediately.
+[2026-08-24 21:07:18]     [Disc & Sim] Prefix: Clcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, N, S, [nH], c, n, o, s]
+[2026-08-24 21:07:18]     [Dead Node] New child Clcc died immediately.
+[2026-08-24 21:11:31]     [Disc & Sim] Prefix: Clc1c | Eff: 95.00% | AvgLogP: 3.1388 | MAE: 2.1534 | R: 0.1161 | Found 4 children -- [(, c, n, s]
+[2026-08-24 21:15:47]     [Disc & Sim] Prefix: [H]c1C | Eff: 11.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, C, N, O, [nH], c, n, o, s]
+[2026-08-24 21:15:47]     [Dead Node] New child [H]c1C died immediately.
+[2026-08-24 21:20:01]     [Disc & Sim] Prefix: [H]c1o | Eff: 22.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), C, O, [nH], c, n, o, s]
+[2026-08-24 21:20:01]     [Dead Node] New child [H]c1o died immediately.
+[2026-08-24 21:24:14]     [Disc & Sim] Prefix: [H]c1c | Eff: 93.50% | AvgLogP: 2.5354 | MAE: 1.5513 | R: 0.2120 | Found 5 children -- [(, N, c, n, s]
+[2026-08-24 21:28:35]     [Disc & Sim] Prefix: OON | Eff: 57.00% | AvgLogP: 2.1501 | MAE: 1.2855 | R: 0.2765 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 21:28:35] Loop 340/500 | BestAvgReward: 0.4594 | BestAvgPrefix: NCO
+[2026-08-24 21:32:47]     [Disc & Sim] Prefix: N=c | Eff: 20.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 21:32:47]     [Dead Node] New child N=c died immediately.
+[2026-08-24 21:36:59]     [Disc & Sim] Prefix: N=C( | Eff: 91.50% | AvgLogP: 2.6606 | MAE: 1.6881 | R: 0.1849 | Found 6 children -- [1, =, C, N, O, c]
+[2026-08-24 21:41:08]     [Disc & Sim] Prefix: Fc1n | Eff: 92.50% | AvgLogP: 2.4004 | MAE: 1.4741 | R: 0.2290 | Found 8 children -- [(, 1, S, [nH], c, n, o, s]
+[2026-08-24 21:45:22]     [Disc & Sim] Prefix: CNN | Eff: 24.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 21:45:22]     [Dead Node] New child CNN died immediately.
+[2026-08-24 21:49:35]     [Disc & Sim] Prefix: CNO | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 21:49:35]     [Dead Node] New child CNO died immediately.
+[2026-08-24 21:53:49]     [Disc & Sim] Prefix: CNC( | Eff: 94.00% | AvgLogP: 1.9006 | MAE: 1.1351 | R: 0.3214 | Found 8 children -- [1, =, C, N, O, S, c, n]
+[2026-08-24 21:58:01]     [Disc & Sim] Prefix: OCO | Eff: 57.00% | AvgLogP: 1.2330 | MAE: 0.7674 | R: 0.4642 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-24 22:02:17]     [Disc & Sim] Prefix: ON1 | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, c, n, o, s]
+[2026-08-24 22:02:17]     [Dead Node] New child ON1 died immediately.
+[2026-08-24 22:06:35]     [Disc & Sim] Prefix: ONn | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 22:06:35]     [Dead Node] New child ONn died immediately.
+[2026-08-24 22:10:47]     [Disc & Sim] Prefix: ON( | Eff: 63.50% | AvgLogP: 2.2308 | MAE: 1.3421 | R: 0.2613 | Found 7 children -- [(, 1, =, C, N, c, s]
+[2026-08-24 22:10:47] Loop 350/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-24 22:15:02]     [Disc & Sim] Prefix: [H]SN | Eff: 43.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, S, c, n]
+[2026-08-24 22:15:02]     [Dead Node] New child [H]SN died immediately.
+[2026-08-24 22:19:13]     [Disc & Sim] Prefix: [H]SO | Eff: 38.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, o]
+[2026-08-24 22:19:13]     [Dead Node] New child [H]SO died immediately.
+[2026-08-24 22:23:22]     [Disc & Sim] Prefix: [H]SC | Eff: 84.50% | AvgLogP: 2.6817 | MAE: 1.7546 | R: 0.1730 | Found 7 children -- [(, 1, =, C, N, O, c]
+[2026-08-24 22:27:29]     [Disc & Sim] Prefix: NNC1 | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-24 22:27:29]     [Dead Node] New child NNC1 died immediately.
+[2026-08-24 22:31:42]     [Disc & Sim] Prefix: NNC( | Eff: 89.00% | AvgLogP: 1.4700 | MAE: 0.8425 | R: 0.4306 | Found 7 children -- [1, =, C, N, O, c, n]
+[2026-08-24 22:35:55]     [Disc & Sim] Prefix: COcc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, c, n, s]
+[2026-08-24 22:35:55]     [Dead Node] New child COcc died immediately.
+[2026-08-24 22:40:06]     [Disc & Sim] Prefix: COcS | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-24 22:40:06]     [Dead Node] New child COcS died immediately.
+[2026-08-24 22:44:26]     [Disc & Sim] Prefix: COc1 | Eff: 95.50% | AvgLogP: 2.5505 | MAE: 1.5927 | R: 0.2034 | Found 3 children -- [C, c, n]
+[2026-08-24 22:48:31]     [Disc & Sim] Prefix: Nc1[nH] | Eff: 13.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, C, N, [nH], c, n, o]
+[2026-08-24 22:48:31]     [Dead Node] New child Nc1[nH] died immediately.
+[2026-08-24 22:52:52]     [Disc & Sim] Prefix: Nc1= | Eff: 47.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, ), C, O, [nH], c, n, o]
+[2026-08-24 22:52:52]     [Dead Node] New child Nc1= died immediately.
+[2026-08-24 22:52:52] Loop 360/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-24 22:57:08]     [Disc & Sim] Prefix: Nc1o | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-24 22:57:08]     [Dead Node] New child Nc1o died immediately.
+[2026-08-24 23:01:12]     [Disc & Sim] Prefix: Nc1nn | Eff: 79.00% | AvgLogP: 1.6042 | MAE: 1.0404 | R: 0.3533 | Found 5 children -- [(, 2, c, n, s]
+[2026-08-24 23:05:31]     [Disc & Sim] Prefix: Brc1c | Eff: 95.00% | AvgLogP: 3.1917 | MAE: 2.1952 | R: 0.1113 | Found 5 children -- [(, [nH], c, n, s]
+[2026-08-24 23:09:42]     [Disc & Sim] Prefix: Oc1n[nH] | Eff: 50.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children -- [(, 2, C, c, n]
+[2026-08-24 23:09:42]     [Dead Node] New child Oc1n[nH] died immediately.
+[2026-08-24 23:13:48]     [Disc & Sim] Prefix: Oc1nN | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 2, C, c, n, s]
+[2026-08-24 23:13:48]     [Dead Node] New child Oc1nN died immediately.
+[2026-08-24 23:17:34]     [Disc & Sim] Prefix: Oc1no | Eff: 64.00% | AvgLogP: 1.8254 | MAE: 1.0807 | R: 0.3394 | Found 6 children -- [(, 2, C, S, c, n]
+[2026-08-24 23:21:19]     [Disc & Sim] Prefix: ClNc | Eff: 57.00% | AvgLogP: 2.8820 | MAE: 1.9103 | R: 0.1480 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-24 23:25:14]     [Disc & Sim] Prefix: FS1 | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, =, C, c, n, o]
+[2026-08-24 23:25:14]     [Dead Node] New child FS1 died immediately.
+[2026-08-24 23:29:22]     [Disc & Sim] Prefix: FSc | Eff: 65.50% | AvgLogP: 3.2161 | MAE: 2.2493 | R: 0.1055 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-24 23:33:19]     [Disc & Sim] Prefix: NOCN | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, s]
+[2026-08-24 23:33:19]     [Dead Node] New child NOCN died immediately.
+[2026-08-24 23:33:19] Loop 370/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-24 23:37:25]     [Disc & Sim] Prefix: NOCC | Eff: 79.00% | AvgLogP: 1.2379 | MAE: 0.8498 | R: 0.4275 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-24 23:41:32]     [Disc & Sim] Prefix: NS1 | Eff: 10.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, 2, =, C, O, c, n, o, s]
+[2026-08-24 23:41:32]     [Dead Node] New child NS1 died immediately.
+[2026-08-24 23:45:30]     [Disc & Sim] Prefix: NSO | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, O, S, c, n, o]
+[2026-08-24 23:45:30]     [Dead Node] New child NSO died immediately.
+[2026-08-24 23:49:40]     [Disc & Sim] Prefix: NSN | Eff: 37.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, O, S, c, n]
+[2026-08-24 23:49:40]     [Dead Node] New child NSN died immediately.
+[2026-08-24 23:53:43]     [Disc & Sim] Prefix: NSn | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, N, O, S, [nH], c, n, o]
+[2026-08-24 23:53:43]     [Dead Node] New child NSn died immediately.
+[2026-08-24 23:57:44]     [Disc & Sim] Prefix: NS(( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [#, (, ), 1, =, C, N, O, c, n]
+[2026-08-24 23:57:44]     [Dead Node] New child NS(( died immediately.
+[2026-08-25 00:02:05]     [Disc & Sim] Prefix: NS(S | Eff: 82.50% | AvgLogP: 2.3857 | MAE: 1.5443 | R: 0.2135 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, s]
+[2026-08-25 00:06:06]     [Disc & Sim] Prefix: OC1 | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, 2, =, C, N, O, [nH], c, n, o]
+[2026-08-25 00:06:06]     [Dead Node] New child OC1 died immediately.
+[2026-08-25 00:10:09]     [Disc & Sim] Prefix: OCN | Eff: 71.00% | AvgLogP: 1.3222 | MAE: 0.8891 | R: 0.4110 | Found 9 children -- [(, 1, =, C, N, O, S, [nH], c]
+[2026-08-25 00:14:22]     [Disc & Sim] Prefix: [H]NCN | Eff: 27.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 00:14:22]     [Dead Node] New child [H]NCN died immediately.
+[2026-08-25 00:14:22] Loop 380/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-25 00:18:31]     [Disc & Sim] Prefix: [H]NCn | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-25 00:18:31]     [Dead Node] New child [H]NCn died immediately.
+[2026-08-25 00:22:32]     [Disc & Sim] Prefix: [H]NCC | Eff: 53.00% | AvgLogP: 1.1492 | MAE: 0.9337 | R: 0.3931 | Found 12 children -- [(, ), 1, =, C, N, O, S, [nH], c, n, s]
+[2026-08-25 00:26:46]     [Disc & Sim] Prefix: OSc | Eff: 50.50% | AvgLogP: 3.0897 | MAE: 2.0897 | R: 0.1237 | Found 7 children -- [(, 1, =, C, O, c, n]
+[2026-08-25 00:30:49]     [Disc & Sim] Prefix: [H]#N | Eff: 62.00% | AvgLogP: 1.9524 | MAE: 1.1343 | R: 0.3217 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-25 00:35:03]     [Disc & Sim] Prefix: CN(( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [#, (, ), 1, 2, =, C, N, O, c, n]
+[2026-08-25 00:35:03]     [Dead Node] New child CN(( died immediately.
+[2026-08-25 00:39:13]     [Disc & Sim] Prefix: CN(c | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, 2, =, C, N, O, S, c, n, s]
+[2026-08-25 00:39:13]     [Dead Node] New child CN(c died immediately.
+[2026-08-25 00:43:31]     [Disc & Sim] Prefix: CN(= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, Cl, N, O, S, c, n]
+[2026-08-25 00:43:31]     [Dead Node] New child CN(= died immediately.
+[2026-08-25 00:47:42]     [Disc & Sim] Prefix: CN(C | Eff: 92.50% | AvgLogP: 2.1419 | MAE: 1.2981 | R: 0.2730 | Found 7 children -- [#, (, ), 1, C, O, c]
+[2026-08-25 00:51:57]     [Disc & Sim] Prefix: NCO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, o]
+[2026-08-25 00:51:57]     [Dead Node] New child NCO1 died immediately.
+[2026-08-25 00:56:08]     [Disc & Sim] Prefix: NCOS | Eff: 35.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [#, (, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 00:56:08]     [Dead Node] New child NCOS died immediately.
+[2026-08-25 00:56:08] Loop 390/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-25 01:00:20]     [Disc & Sim] Prefix: NCO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 01:00:20]     [Dead Node] New child NCO( died immediately.
+[2026-08-25 01:04:35]     [Disc & Sim] Prefix: NCOn | Eff: 6.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, o]
+[2026-08-25 01:04:35]     [Dead Node] New child NCOn died immediately.
+[2026-08-25 01:08:46]     [Disc & Sim] Prefix: NCON | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 01:08:46]     [Dead Node] New child NCON died immediately.
+[2026-08-25 01:13:01]     [Disc & Sim] Prefix: NCOc | Eff: 72.50% | AvgLogP: 1.6944 | MAE: 0.9563 | R: 0.3843 | Found 8 children -- [(, ), 1, =, C, O, c, n]
+[2026-08-25 01:17:17]     [Disc & Sim] Prefix: [H]=C | Eff: 94.00% | AvgLogP: 2.7342 | MAE: 1.7543 | R: 0.1730 | Found 6 children -- [(, 1, C, O, c, n]
+[2026-08-25 01:21:27]     [Disc & Sim] Prefix: NNcN | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, =, C, N, O, [nH], c, n, o, s]
+[2026-08-25 01:21:27]     [Dead Node] New child NNcN died immediately.
+[2026-08-25 01:25:42]     [Disc & Sim] Prefix: NNc1o | Eff: 11.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, 1, C, c, n, o, s]
+[2026-08-25 01:25:42]     [Dead Node] New child NNc1o died immediately.
+[2026-08-25 01:29:54]     [Disc & Sim] Prefix: NNc1n | Eff: 92.50% | AvgLogP: 1.4008 | MAE: 0.8608 | R: 0.4228 | Found 7 children -- [(, 2, [nH], c, n, o, s]
+[2026-08-25 01:34:05]     [Disc & Sim] Prefix: Cc1C | Eff: 7.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), C, N, [nH], c, n, o, s]
+[2026-08-25 01:34:05]     [Dead Node] New child Cc1C died immediately.
+[2026-08-25 01:38:22]     [Disc & Sim] Prefix: Cc1= | Eff: 47.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, C, O, [nH], c, n, o, s]
+[2026-08-25 01:38:22]     [Dead Node] New child Cc1= died immediately.
+[2026-08-25 01:38:22] Loop 400/500 | BestAvgReward: 0.4642 | BestAvgPrefix: OCO
+[2026-08-25 01:42:35]     [Disc & Sim] Prefix: Cc1n( | Eff: 1.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 13 children -- [(, -, 1, 2, =, Br, C, Cl, N, S, c, n, s]
+[2026-08-25 01:42:35]     [Dead Node] New child Cc1n( died immediately.
+[2026-08-25 01:46:54]     [Disc & Sim] Prefix: Cc1n[nH] | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 2, N, c, n, s]
+[2026-08-25 01:46:54]     [Dead Node] New child Cc1n[nH] died immediately.
+[2026-08-25 01:51:06]     [Disc & Sim] Prefix: Cc1nc | Eff: 86.50% | AvgLogP: 2.6326 | MAE: 1.6826 | R: 0.1859 | Found 5 children -- [(, 2, c, n, s]
+[2026-08-25 01:55:22]     [Disc & Sim] Prefix: ClCn | Eff: 37.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-25 01:55:22]     [Dead Node] New child ClCn died immediately.
+[2026-08-25 01:59:39]     [Disc & Sim] Prefix: ClCO | Eff: 68.50% | AvgLogP: 2.6392 | MAE: 1.6882 | R: 0.1849 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 02:03:52]     [Disc & Sim] Prefix: NOc= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, O, c, n, o, s]
+[2026-08-25 02:03:52]     [Dead Node] New child NOc= died immediately.
+[2026-08-25 02:08:03]     [Disc & Sim] Prefix: NOcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 02:08:03]     [Dead Node] New child NOcC died immediately.
+[2026-08-25 02:12:19]     [Disc & Sim] Prefix: NOcn | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, C, N, O, [nH], c, n, o, s]
+[2026-08-25 02:12:19]     [Dead Node] New child NOcn died immediately.
+[2026-08-25 02:16:36]     [Disc & Sim] Prefix: NOc1n | Eff: 92.50% | AvgLogP: 1.2197 | MAE: 0.7121 | R: 0.4906 | Found 5 children -- [(, 1, c, n, o]
+[2026-08-25 02:20:46]     [Disc & Sim] Prefix: Nc1cc | Eff: 95.50% | AvgLogP: 2.1776 | MAE: 1.2898 | R: 0.2753 | Found 6 children -- [(, -, 2, c, n, s]
+[2026-08-25 02:20:46] Loop 410/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 02:25:07]     [Disc & Sim] Prefix: FCn | Eff: 30.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-25 02:25:07]     [Dead Node] New child FCn died immediately.
+[2026-08-25 02:29:27]     [Disc & Sim] Prefix: FCS | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-25 02:29:27]     [Dead Node] New child FCS died immediately.
+[2026-08-25 02:33:30]     [Disc & Sim] Prefix: FC1 | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, 1, =, C, F, N, O, c, n, o, s]
+[2026-08-25 02:33:30]     [Dead Node] New child FC1 died immediately.
+[2026-08-25 02:37:51]     [Disc & Sim] Prefix: FCO | Eff: 67.00% | AvgLogP: 2.3931 | MAE: 1.4581 | R: 0.2327 | Found 9 children -- [(, 1, =, C, F, N, O, c, n]
+[2026-08-25 02:42:03]     [Disc & Sim] Prefix: BrNO | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, c, n, o, s]
+[2026-08-25 02:42:03]     [Dead Node] New child BrNO died immediately.
+[2026-08-25 02:46:17]     [Disc & Sim] Prefix: BrNc | Eff: 56.00% | AvgLogP: 3.3005 | MAE: 2.3005 | R: 0.1002 | Found 10 children -- [(, 1, =, C, F, N, S, c, n, s]
+[2026-08-25 02:50:37]     [Disc & Sim] Prefix: O=C( | Eff: 96.50% | AvgLogP: 2.5322 | MAE: 1.5681 | R: 0.2084 | Found 5 children -- [), C, N, O, c]
+[2026-08-25 02:54:50]     [Disc & Sim] Prefix: NCN= | Eff: 0.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-25 02:54:50]     [Dead Node] New child NCN= died immediately.
+[2026-08-25 02:58:52]     [Disc & Sim] Prefix: NCNn | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, o]
+[2026-08-25 02:58:52]     [Dead Node] New child NCNn died immediately.
+[2026-08-25 03:02:38]     [Disc & Sim] Prefix: NCNC | Eff: 43.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, C, N, O, S, c, n]
+[2026-08-25 03:02:38]     [Dead Node] New child NCNC died immediately.
+[2026-08-25 03:02:38] Loop 420/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 03:06:22]     [Disc & Sim] Prefix: NCNc | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, 2, =, C, N, O, c, n]
+[2026-08-25 03:06:22]     [Dead Node] New child NCNc died immediately.
+[2026-08-25 03:10:08]     [Disc & Sim] Prefix: NCNN | Eff: 11.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, C, N, O, S, c, n]
+[2026-08-25 03:10:08]     [Dead Node] New child NCNN died immediately.
+[2026-08-25 03:14:17]     [Disc & Sim] Prefix: NCNO | Eff: 5.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-25 03:14:17]     [Dead Node] New child NCNO died immediately.
+[2026-08-25 03:18:24]     [Disc & Sim] Prefix: NCN( | Eff: 81.50% | AvgLogP: 1.3510 | MAE: 0.8347 | R: 0.4340 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-25 03:22:18]     [Disc & Sim] Prefix: NOC1 | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-25 03:22:18]     [Dead Node] New child NOC1 died immediately.
+[2026-08-25 03:26:25]     [Disc & Sim] Prefix: NOCS | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 03:26:25]     [Dead Node] New child NOCS died immediately.
+[2026-08-25 03:30:38]     [Disc & Sim] Prefix: NOCc | Eff: 77.50% | AvgLogP: 1.9215 | MAE: 1.1123 | R: 0.3288 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 03:34:38]     [Disc & Sim] Prefix: [H]Oc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [=, C, N, O, c, n, o]
+[2026-08-25 03:34:38]     [Dead Node] New child [H]Oc( died immediately.
+[2026-08-25 03:38:53]     [Disc & Sim] Prefix: [H]Oc1 | Eff: 95.00% | AvgLogP: 2.2430 | MAE: 1.3531 | R: 0.2584 | Found 5 children -- [=, C, c, n, o]
+[2026-08-25 03:43:03]     [Disc & Sim] Prefix: CCn | Eff: 34.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 03:43:03]     [Dead Node] New child CCn died immediately.
+[2026-08-25 03:43:03] Loop 430/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 03:47:08]     [Disc & Sim] Prefix: CCS | Eff: 52.50% | AvgLogP: 2.7051 | MAE: 1.7815 | R: 0.1684 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 03:51:25]     [Disc & Sim] Prefix: FNn | Eff: 13.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, F, S, c, n, o]
+[2026-08-25 03:51:25]     [Dead Node] New child FNn died immediately.
+[2026-08-25 03:55:30]     [Disc & Sim] Prefix: FNC( | Eff: 93.50% | AvgLogP: 2.2835 | MAE: 1.3957 | R: 0.2477 | Found 7 children -- [1, =, C, N, O, c, n]
+[2026-08-25 03:59:53]     [Disc & Sim] Prefix: NNCC | Eff: 67.50% | AvgLogP: 1.2615 | MAE: 0.8686 | R: 0.4195 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 04:04:05]     [Disc & Sim] Prefix: OOC | Eff: 93.50% | AvgLogP: 2.4140 | MAE: 1.4753 | R: 0.2287 | Found 8 children -- [#, (, 1, C, N, O, c, n]
+[2026-08-25 04:08:23]     [Disc & Sim] Prefix: ClO1 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, c, n, s]
+[2026-08-25 04:08:23]     [Dead Node] New child ClO1 died immediately.
+[2026-08-25 04:12:45]     [Disc & Sim] Prefix: ClOC( | Eff: 90.00% | AvgLogP: 2.8504 | MAE: 1.8794 | R: 0.1527 | Found 6 children -- [1, =, C, N, O, c]
+[2026-08-25 04:17:02]     [Disc & Sim] Prefix: N#S1 | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, S, c, n, o]
+[2026-08-25 04:17:02]     [Dead Node] New child N#S1 died immediately.
+[2026-08-25 04:21:03]     [Disc & Sim] Prefix: N#SC | Eff: 77.50% | AvgLogP: 2.9634 | MAE: 1.9893 | R: 0.1368 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 04:25:23]     [Disc & Sim] Prefix: [H]Ncc | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 14 children -- [(, ), 1, 2, 5, =, C, N, O, [nH], c, n, o, s]
+[2026-08-25 04:25:23]     [Dead Node] New child [H]Ncc died immediately.
+[2026-08-25 04:25:23] Loop 440/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 04:29:29]     [Disc & Sim] Prefix: [H]Nc( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), =, C, N, O, [nH], c, n, o, s]
+[2026-08-25 04:29:29]     [Dead Node] New child [H]Nc( died immediately.
+[2026-08-25 04:33:31]     [Disc & Sim] Prefix: [H]Ncn | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 13 children -- [(, ), 1, =, C, N, O, S, [nH], c, n, o, s]
+[2026-08-25 04:33:31]     [Dead Node] New child [H]Ncn died immediately.
+[2026-08-25 04:37:46]     [Disc & Sim] Prefix: [H]Nc1 | Eff: 92.50% | AvgLogP: 2.0563 | MAE: 1.2164 | R: 0.2963 | Found 7 children -- [(, =, C, [nH], c, n, s]
+[2026-08-25 04:41:52]     [Disc & Sim] Prefix: FOc1 | Eff: 96.50% | AvgLogP: 2.7728 | MAE: 1.7859 | R: 0.1676 | Found 4 children -- [=, c, n, s]
+[2026-08-25 04:45:53]     [Disc & Sim] Prefix: [H]CC | Eff: 85.50% | AvgLogP: 2.3682 | MAE: 1.4342 | R: 0.2383 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 04:50:04]     [Disc & Sim] Prefix: BrCn | Eff: 33.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 04:50:04]     [Dead Node] New child BrCn died immediately.
+[2026-08-25 04:54:13]     [Disc & Sim] Prefix: BrC( | Eff: 90.00% | AvgLogP: 2.8573 | MAE: 1.9386 | R: 0.1439 | Found 9 children -- [(, 1, =, C, F, N, O, S, c]
+[2026-08-25 04:58:12]     [Disc & Sim] Prefix: Oc1cs | Eff: 51.50% | AvgLogP: 2.2495 | MAE: 1.3348 | R: 0.2632 | Found 8 children -- [(, 2, C, Cl, N, c, n, s]
+[2026-08-25 05:02:21]     [Disc & Sim] Prefix: NSc1 | Eff: 93.50% | AvgLogP: 2.3766 | MAE: 1.4441 | R: 0.2359 | Found 7 children -- [(, O, [nH], c, n, o, s]
+[2026-08-25 05:06:27]     [Disc & Sim] Prefix: CS(C | Eff: 91.00% | AvgLogP: 2.3307 | MAE: 1.4759 | R: 0.2286 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-25 05:06:27] Loop 450/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 05:10:33]     [Disc & Sim] Prefix: OCn | Eff: 22.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, 1, =, C, N, O, c, n]
+[2026-08-25 05:10:33]     [Dead Node] New child OCn died immediately.
+[2026-08-25 05:14:39]     [Disc & Sim] Prefix: OCS | Eff: 69.00% | AvgLogP: 1.9702 | MAE: 1.1552 | R: 0.3150 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 05:18:43]     [Disc & Sim] Prefix: Clc11 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, [nH], c, n, o, s]
+[2026-08-25 05:18:43]     [Dead Node] New child Clc11 died immediately.
+[2026-08-25 05:22:44]     [Disc & Sim] Prefix: Clc1o | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, C, N, [nH], c, n, o, s]
+[2026-08-25 05:22:44]     [Dead Node] New child Clc1o died immediately.
+[2026-08-25 05:26:59]     [Disc & Sim] Prefix: Clc1( | Eff: 2.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, =, C, Cl, N, [nH], c, n, o, s]
+[2026-08-25 05:26:59]     [Dead Node] New child Clc1( died immediately.
+[2026-08-25 05:31:04]     [Disc & Sim] Prefix: Clc1n | Eff: 96.00% | AvgLogP: 2.8006 | MAE: 1.8921 | R: 0.1508 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-25 05:35:07]     [Disc & Sim] Prefix: [H]c1[nH] | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-25 05:35:07]     [Dead Node] New child [H]c1[nH] died immediately.
+[2026-08-25 05:39:12]     [Disc & Sim] Prefix: [H]c1s | Eff: 19.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, =, C, [nH], c, n, o, s]
+[2026-08-25 05:39:12]     [Dead Node] New child [H]c1s died immediately.
+[2026-08-25 05:43:23]     [Disc & Sim] Prefix: [H]c1no | Eff: 70.00% | AvgLogP: 2.0288 | MAE: 1.1716 | R: 0.3099 | Found 4 children -- [(, 2, c, n]
+[2026-08-25 05:47:24]     [Disc & Sim] Prefix: N=SC | Eff: 53.00% | AvgLogP: 1.9766 | MAE: 1.2802 | R: 0.2780 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 05:47:24] Loop 460/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 05:51:31]     [Disc & Sim] Prefix: COC( | Eff: 86.50% | AvgLogP: 2.0122 | MAE: 1.1976 | R: 0.3019 | Found 8 children -- [1, =, C, N, O, S, c, n]
+[2026-08-25 05:55:33]     [Disc & Sim] Prefix: Fc1[nH] | Eff: 10.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-25 05:55:33]     [Dead Node] New child Fc1[nH] died immediately.
+[2026-08-25 05:59:35]     [Disc & Sim] Prefix: Fc11 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children -- [(, C, [nH], c, n, o, s]
+[2026-08-25 05:59:35]     [Dead Node] New child Fc11 died immediately.
+[2026-08-25 06:03:49]     [Disc & Sim] Prefix: Fc1s | Eff: 14.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, [nH], c, n, o, s]
+[2026-08-25 06:03:49]     [Dead Node] New child Fc1s died immediately.
+[2026-08-25 06:07:54]     [Disc & Sim] Prefix: Fc1o | Eff: 12.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, 2, N, [nH], c, n, o, s]
+[2026-08-25 06:07:54]     [Dead Node] New child Fc1o died immediately.
+[2026-08-25 06:11:57]     [Disc & Sim] Prefix: Fc1ns | Eff: 61.00% | AvgLogP: 2.5437 | MAE: 1.6238 | R: 0.1971 | Found 7 children -- [(, 2, C, F, c, n, s]
+[2026-08-25 06:16:05]     [Disc & Sim] Prefix: ONNc | Eff: 17.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-25 06:16:05]     [Dead Node] New child ONNc died immediately.
+[2026-08-25 06:20:02]     [Disc & Sim] Prefix: ONN1 | Eff: 38.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-25 06:20:02]     [Dead Node] New child ONN1 died immediately.
+[2026-08-25 06:24:01]     [Disc & Sim] Prefix: ONNO | Eff: 2.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, s]
+[2026-08-25 06:24:01]     [Dead Node] New child ONNO died immediately.
+[2026-08-25 06:28:06]     [Disc & Sim] Prefix: ONNC | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, ), 1, =, C, N, O, c, n]
+[2026-08-25 06:28:06]     [Dead Node] New child ONNC died immediately.
+[2026-08-25 06:28:06] Loop 470/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 06:32:08]     [Disc & Sim] Prefix: ONNN | Eff: 5.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, =, C, N, O, S, [nH], c, n, o]
+[2026-08-25 06:32:08]     [Dead Node] New child ONNN died immediately.
+[2026-08-25 06:36:10]     [Disc & Sim] Prefix: ONN= | Eff: 1.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, [nH], c, n]
+[2026-08-25 06:36:10]     [Dead Node] New child ONN= died immediately.
+[2026-08-25 06:40:14]     [Disc & Sim] Prefix: ONN( | Eff: 85.00% | AvgLogP: 1.9485 | MAE: 1.1147 | R: 0.3280 | Found 8 children -- [(, 1, =, C, N, O, c, o]
+[2026-08-25 06:44:15]     [Disc & Sim] Prefix: [H]#O | Eff: 64.00% | AvgLogP: 1.9133 | MAE: 1.1518 | R: 0.3161 | Found 9 children -- [(, 1, =, C, N, [nH], c, n, o]
+[2026-08-25 06:48:16]     [Disc & Sim] Prefix: NCCS | Eff: 37.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 06:48:16]     [Dead Node] New child NCCS died immediately.
+[2026-08-25 06:52:21]     [Disc & Sim] Prefix: NCC( | Eff: 80.50% | AvgLogP: 1.4186 | MAE: 1.0973 | R: 0.3338 | Found 9 children -- [(, 1, =, C, N, O, S, c, n]
+[2026-08-25 06:56:15]     [Disc & Sim] Prefix: BrON | Eff: 35.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, 1, =, C, c, n]
+[2026-08-25 06:56:15]     [Dead Node] New child BrON died immediately.
+[2026-08-25 06:59:58]     [Disc & Sim] Prefix: BrO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, 1, =, C, N, O, S, c, n, o]
+[2026-08-25 06:59:58]     [Dead Node] New child BrO( died immediately.
+[2026-08-25 07:03:40]     [Disc & Sim] Prefix: BrOC( | Eff: 90.50% | AvgLogP: 2.9525 | MAE: 1.9729 | R: 0.1391 | Found 8 children -- [(, 1, =, C, N, O, S, c]
+[2026-08-25 07:07:21]     [Disc & Sim] Prefix: OCOn | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, [nH], c, n, o]
+[2026-08-25 07:07:21]     [Dead Node] New child OCOn died immediately.
+[2026-08-25 07:07:21] Loop 480/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 07:11:01]     [Disc & Sim] Prefix: OCOO | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 12 children -- [(, ), 1, 2, =, C, N, O, c, n, o, s]
+[2026-08-25 07:11:01]     [Dead Node] New child OCOO died immediately.
+[2026-08-25 07:14:59]     [Disc & Sim] Prefix: OCO( | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, F, N, O, S, c]
+[2026-08-25 07:14:59]     [Dead Node] New child OCO( died immediately.
+[2026-08-25 07:18:45]     [Disc & Sim] Prefix: OCO= | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, [nH], c, n]
+[2026-08-25 07:18:45]     [Dead Node] New child OCO= died immediately.
+[2026-08-25 07:22:32]     [Disc & Sim] Prefix: OCON | Eff: 25.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 11 children -- [(, ), 1, =, C, N, O, S, [nH], c, n]
+[2026-08-25 07:22:32]     [Dead Node] New child OCON died immediately.
+[2026-08-25 07:26:36]     [Disc & Sim] Prefix: OCOc | Eff: 71.00% | AvgLogP: 1.6904 | MAE: 0.9081 | R: 0.4033 | Found 8 children -- [(, ), 1, =, C, N, c, s]
+[2026-08-25 07:30:30]     [Disc & Sim] Prefix: CNcC | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [(, ), 1, =, C, N, O, c, n, o]
+[2026-08-25 07:30:30]     [Dead Node] New child CNcC died immediately.
+[2026-08-25 07:34:28]     [Disc & Sim] Prefix: CNc1 | Eff: 94.00% | AvgLogP: 2.4909 | MAE: 1.5379 | R: 0.2148 | Found 7 children -- [(, ), C, c, n, o, s]
+[2026-08-25 07:38:24]     [Disc & Sim] Prefix: [H]S1 | Eff: 19.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, 1, =, C, N, [nH], c, n, o]
+[2026-08-25 07:38:24]     [Dead Node] New child [H]S1 died immediately.
+[2026-08-25 07:42:25]     [Disc & Sim] Prefix: [H]S(C | Eff: 92.50% | AvgLogP: 1.9178 | MAE: 1.1875 | R: 0.3050 | Found 11 children -- [#, (, ), 1, =, C, N, O, S, c, n]
+[2026-08-25 07:46:19]     [Disc & Sim] Prefix: NNc1) | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children -- [(, [nH], c, n, o]
+[2026-08-25 07:46:19]     [Dead Node] New child NNc1) died immediately.
+[2026-08-25 07:46:19] Loop 490/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 07:50:18]     [Disc & Sim] Prefix: NNc1= | Eff: 56.00% | AvgLogP: 0.6857 | MAE: 0.7769 | R: 0.4598 | Found 11 children -- [(, ), 1, 2, =, O, [nH], c, n, o, s]
+[2026-08-25 07:54:19]     [Disc & Sim] Prefix: O=SN | Eff: 1.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children -- [(, =, C, N, O, [nH], c, o]
+[2026-08-25 07:54:19]     [Dead Node] New child O=SN died immediately.
+[2026-08-25 07:58:15]     [Disc & Sim] Prefix: O=S1 | Eff: 42.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children -- [(, =, C, N, O, [nH], c, n, o]
+[2026-08-25 07:58:15]     [Dead Node] New child O=S1 died immediately.
+[2026-08-25 08:02:14]     [Disc & Sim] Prefix: O=S(O | Eff: 92.00% | AvgLogP: 2.3364 | MAE: 1.4247 | R: 0.2406 | Found 8 children -- [1, =, C, N, O, S, c, n]
+[2026-08-25 08:06:17]     [Disc & Sim] Prefix: Nc1nc | Eff: 88.50% | AvgLogP: 1.7787 | MAE: 1.0508 | R: 0.3497 | Found 5 children -- [(, 2, c, n, s]
+[2026-08-25 08:10:14]     [Disc & Sim] Prefix: NOc1O | Eff: 1.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children -- [(, ), C, c, n, s]
+[2026-08-25 08:10:14]     [Dead Node] New child NOc1O died immediately.
+[2026-08-25 08:14:15]     [Disc & Sim] Prefix: NOc1c | Eff: 96.00% | AvgLogP: 1.8645 | MAE: 1.0070 | R: 0.3653 | Found 4 children -- [(, c, n, o]
+[2026-08-25 08:18:18]     [Disc & Sim] Prefix: ClSc | Eff: 68.00% | AvgLogP: 3.4668 | MAE: 2.4809 | R: 0.0837 | Found 7 children -- [(, 1, =, C, N, c, n]
+[2026-08-25 08:22:16]     [Disc & Sim] Prefix: FCc | Eff: 55.00% | AvgLogP: 2.8136 | MAE: 1.8235 | R: 0.1615 | Found 10 children -- [(, 1, =, C, F, N, O, S, c, n]
+[2026-08-25 08:26:17]     [Disc & Sim] Prefix: [H]OCS | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 10 children -- [#, (, 1, =, C, N, O, S, c, n]
+[2026-08-25 08:26:17]     [Dead Node] New child [H]OCS died immediately.
+[2026-08-25 08:26:17] Loop 500/500 | BestAvgReward: 0.4906 | BestAvgPrefix: NOc1n
+[2026-08-25 08:26:17] 
+=== MCTS Completed ===
+[2026-08-25 08:26:17] Constructing best path based on visit counts (Robust Child):
+[2026-08-25 08:26:17]   Step 1: N (Visits: 51/219, Value: 16.53)
+[2026-08-25 08:26:17]   Step 2: N (Visits: 9/51, Value: 3.62)
+[2026-08-25 08:26:17]   Step 3: C (Visits: 4/9, Value: 1.61)
+[2026-08-25 08:26:17]   Step 4: c (Visits: 1/4, Value: 0.40)
+[2026-08-25 08:26:17] 
+=== Final Results ===
+[2026-08-25 08:26:17] Robust Sequence Prefix (Most Visited Path): NNCc
+[2026-08-25 08:26:17] Evaluating Robust Sequence...
+[2026-08-25 08:30:21] Robust Sequence Avg LogP: 1.585089037037036
+[2026-08-25 08:30:21] Robust Sequence MAE LogP: 0.9716579259259254
+[2026-08-25 08:30:21] Robust Sequence Best Molecule: NNCc1ccc(NC(=O)CN2CCCCCC2=O)cc1
+[2026-08-25 08:30:21] Robust Sequence Best LogP: 0.9909999999999997
+[2026-08-25 08:30:21] 
+Constructing best path based on max average reward:
+[2026-08-25 08:30:21]   Step 1: N (Visits: 51/219, Avg Value: 0.3241)
+[2026-08-25 08:30:21]   Step 2: N (Visits: 9/51, Avg Value: 0.4026)
+[2026-08-25 08:30:21]   Step 3: C (Visits: 4/9, Avg Value: 0.4037)
+[2026-08-25 08:30:21]   Step 4: ( (Visits: 1/4, Avg Value: 0.4306)
+[2026-08-25 08:30:21] Max Reward Sequence Prefix (Highest Avg Reward Path): NNC(
+[2026-08-25 08:30:21] Evaluating Max Reward Sequence...
+[2026-08-25 08:34:19] Max Reward Sequence Avg LogP: 1.3695629834254144
+[2026-08-25 08:34:19] Max Reward Sequence MAE LogP: 0.9749667403314922
+[2026-08-25 08:34:19] Max Reward Sequence Best Molecule: NNC(=O)c1ccccc1NC(=O)c1cscn1
+[2026-08-25 08:34:19] Max Reward Sequence Best LogP: 0.9988999999999995
+[2026-08-25 08:34:19] 
+Global Best Found During Search:
+[2026-08-25 08:34:19]   [Single Molecule] Sequence: Nc1cnnn1CC(=O)N(C)Cc1cccc2[nH]ccc12
+[2026-08-25 08:34:19]   [Single Molecule] LogP: 1.0002 (Diff: 0.0002)
+[2026-08-25 08:34:19]   [Batch Average]   Prefix: NOc1n
+[2026-08-25 08:34:19]   [Batch Average]   Avg LogP: 1.2197 (Diff: 0.2197)

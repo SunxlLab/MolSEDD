@@ -1,0 +1,831 @@
+脚本: MOSES_2_减去频率.py
+开始时间: 2026-08-19 06:02:06
+参数: --simulations 500 --wanti 1.0 --c_param 0.618 --discovery_bs 200 --start_tokens Br,C,Cl,F,N,O,[H],c
+--------------------------------------------------------------
+Initial (Root) Tokens: ['Br', 'C', 'Cl', 'F', 'N', 'O', '[H]', 'c']
+Loading model from /mnt/data0/CAI_zhanpeng/exp_local/2026.02.26/104218...
+Loading weights from local directory
+Model loaded successfully.
+Starting MOSES Uniform-prior PUCT (消融对照) with 500 simulations...
+    [Disc & Sim] Prefix: C | Eff: 99.00% | AvgLogP: 2.4990 | MAE: 1.5469 | R: 0.2129 | Found 8 children (uniform prior=0.1250) -- [#, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: Br | Eff: 80.00% | AvgLogP: 2.9023 | MAE: 1.9702 | R: 0.1394 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: O | Eff: 96.00% | AvgLogP: 2.1877 | MAE: 1.3450 | R: 0.2605 | Found 6 children (uniform prior=0.1667) -- [=, C, N, O, S, c]
+    [Disc & Sim] Prefix: Cl | Eff: 75.00% | AvgLogP: 2.8194 | MAE: 1.8921 | R: 0.1508 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: c | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child c died immediately.
+    [Disc & Sim] Prefix: [H] | Eff: 99.00% | AvgLogP: 2.2917 | MAE: 1.4116 | R: 0.2438 | Found 8 children (uniform prior=0.1250) -- [#, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: N | Eff: 95.00% | AvgLogP: 1.8999 | MAE: 1.1672 | R: 0.3112 | Found 8 children (uniform prior=0.1250) -- [#, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: F | Eff: 82.50% | AvgLogP: 2.4420 | MAE: 1.5039 | R: 0.2223 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: Nc | Eff: 77.00% | AvgLogP: 2.1286 | MAE: 1.2617 | R: 0.2832 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: OO | Eff: 84.50% | AvgLogP: 2.4022 | MAE: 1.4374 | R: 0.2375 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+Loop 10/500 | R: 0.2375 | BestAvgPrefix: N
+    [Disc & Sim] Prefix: N# | Eff: 68.00% | AvgLogP: 2.5013 | MAE: 1.5755 | R: 0.2069 | Found 1 children (uniform prior=1.0000) -- [C]
+    [Disc & Sim] Prefix: [H]S | Eff: 79.50% | AvgLogP: 2.3458 | MAE: 1.4809 | R: 0.2274 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: FS | Eff: 83.50% | AvgLogP: 3.0134 | MAE: 2.1123 | R: 0.1210 | Found 9 children (uniform prior=0.1111) -- [(, 1, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: C# | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [1, C, S]
+    [Dead Node] New child C# died immediately.
+    [Disc & Sim] Prefix: Cn | Eff: 34.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child Cn died immediately.
+    [Disc & Sim] Prefix: CO | Eff: 84.50% | AvgLogP: 2.3738 | MAE: 1.4472 | R: 0.2352 | Found 5 children (uniform prior=0.2000) -- [C, N, O, c, n]
+    [Disc & Sim] Prefix: ON | Eff: 84.00% | AvgLogP: 2.0526 | MAE: 1.2584 | R: 0.2841 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, O, S, c]
+    [Disc & Sim] Prefix: NN | Eff: 68.50% | AvgLogP: 1.3058 | MAE: 0.9794 | R: 0.3755 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: N= | Eff: 72.00% | AvgLogP: 2.5668 | MAE: 1.6533 | R: 0.1914 | Found 4 children (uniform prior=0.2500) -- [1, C, S, c]
+    [Disc & Sim] Prefix: [H]O | Eff: 88.00% | AvgLogP: 2.1472 | MAE: 1.2682 | R: 0.2813 | Found 5 children (uniform prior=0.2000) -- [C, N, O, S, c]
+Loop 20/500 | R: 0.2813 | BestAvgPrefix: NN
+    [Disc & Sim] Prefix: O= | Eff: 96.00% | AvgLogP: 2.4823 | MAE: 1.5737 | R: 0.2073 | Found 3 children (uniform prior=0.3333) -- [C, S, c]
+    [Disc & Sim] Prefix: CS | Eff: 79.50% | AvgLogP: 2.7754 | MAE: 1.8608 | R: 0.1556 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: [H]= | Eff: 70.00% | AvgLogP: 2.7397 | MAE: 1.8140 | R: 0.1630 | Found 5 children (uniform prior=0.2000) -- [C, N, O, S, c]
+    [Disc & Sim] Prefix: NS | Eff: 77.50% | AvgLogP: 2.0495 | MAE: 1.3837 | R: 0.2506 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, S, c]
+    [Disc & Sim] Prefix: ClN | Eff: 78.50% | AvgLogP: 2.6710 | MAE: 1.7579 | R: 0.1724 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: Brc | Eff: 75.00% | AvgLogP: 3.1464 | MAE: 2.1659 | R: 0.1146 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NO | Eff: 74.00% | AvgLogP: 1.6608 | MAE: 0.9594 | R: 0.3831 | Found 4 children (uniform prior=0.2500) -- [C, N, O, c]
+    [Disc & Sim] Prefix: NC | Eff: 91.50% | AvgLogP: 1.5401 | MAE: 1.0088 | R: 0.3647 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: Nn | Eff: 14.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child Nn died immediately.
+    [Disc & Sim] Prefix: NOc | Eff: 82.50% | AvgLogP: 2.0552 | MAE: 1.1127 | R: 0.3287 | Found 1 children (uniform prior=1.0000) -- [1]
+Loop 30/500 | R: 0.3287 | BestAvgPrefix: NO
+    [Disc & Sim] Prefix: NNS | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, O, c, n]
+    [Dead Node] New child NNS died immediately.
+    [Disc & Sim] Prefix: NNc | Eff: 57.50% | AvgLogP: 1.6936 | MAE: 1.0469 | R: 0.3510 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NCN | Eff: 58.00% | AvgLogP: 1.1826 | MAE: 0.8102 | R: 0.4448 | Found 9 children (uniform prior=0.1111) -- [(, 1, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NCn | Eff: 19.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCn died immediately.
+    [Disc & Sim] Prefix: NC( | Eff: 93.00% | AvgLogP: 1.7737 | MAE: 1.0254 | R: 0.3586 | Found 7 children (uniform prior=0.1429) -- [=, C, F, N, O, S, c]
+    [Disc & Sim] Prefix: NCS | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Dead Node] New child NCS died immediately.
+    [Disc & Sim] Prefix: NC1 | Eff: 34.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, =, C, c, n]
+    [Dead Node] New child NC1 died immediately.
+    [Disc & Sim] Prefix: NCc | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCc died immediately.
+    [Disc & Sim] Prefix: NCC | Eff: 74.00% | AvgLogP: 1.4631 | MAE: 0.9680 | R: 0.3799 | Found 9 children (uniform prior=0.1111) -- [#, (, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NN1 | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, c]
+    [Dead Node] New child NN1 died immediately.
+Loop 40/500 | R: 0.0000 | BestAvgPrefix: NCN
+    [Disc & Sim] Prefix: NNO | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, c, n]
+    [Dead Node] New child NNO died immediately.
+    [Disc & Sim] Prefix: NNC | Eff: 85.00% | AvgLogP: 1.3049 | MAE: 0.8718 | R: 0.4182 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, c, n]
+    [Disc & Sim] Prefix: NNn | Eff: 10.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NNn died immediately.
+    [Disc & Sim] Prefix: NN( | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, c]
+    [Dead Node] New child NN( died immediately.
+    [Disc & Sim] Prefix: NNN | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 1, C, S, c]
+    [Dead Node] New child NNN died immediately.
+    [Disc & Sim] Prefix: NNC1 | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, =, C, N, O, c]
+    [Dead Node] New child NNC1 died immediately.
+    [Disc & Sim] Prefix: NNC( | Eff: 89.50% | AvgLogP: 1.4269 | MAE: 0.9205 | R: 0.3983 | Found 6 children (uniform prior=0.1667) -- [=, C, I, N, O, c]
+    [Disc & Sim] Prefix: NON | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, S, c, n]
+    [Dead Node] New child NON died immediately.
+    [Disc & Sim] Prefix: NOO | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, O, c]
+    [Dead Node] New child NOO died immediately.
+    [Disc & Sim] Prefix: NOC | Eff: 86.00% | AvgLogP: 1.5054 | MAE: 0.9066 | R: 0.4039 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, O, c, n]
+Loop 50/500 | R: 0.4039 | BestAvgPrefix: NCN
+    [Disc & Sim] Prefix: NOC( | Eff: 89.50% | AvgLogP: 1.4649 | MAE: 0.9380 | R: 0.3914 | Found 5 children (uniform prior=0.2000) -- [=, C, N, O, c]
+    [Disc & Sim] Prefix: NCO | Eff: 50.50% | AvgLogP: 1.4627 | MAE: 0.9159 | R: 0.4002 | Found 4 children (uniform prior=0.2500) -- [C, S, c, n]
+    [Disc & Sim] Prefix: NNCO | Eff: 19.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [C, N, O, c, n]
+    [Dead Node] New child NNCO died immediately.
+    [Disc & Sim] Prefix: NNCc | Eff: 70.00% | AvgLogP: 1.5771 | MAE: 0.8796 | R: 0.4150 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: Nc1 | Eff: 92.50% | AvgLogP: 2.0161 | MAE: 1.2375 | R: 0.2901 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Disc & Sim] Prefix: NNCN | Eff: 33.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, c, n]
+    [Dead Node] New child NNCN died immediately.
+    [Disc & Sim] Prefix: NNCn | Eff: 8.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NNCn died immediately.
+    [Disc & Sim] Prefix: NNCC | Eff: 75.00% | AvgLogP: 1.2805 | MAE: 0.9387 | R: 0.3911 | Found 9 children (uniform prior=0.1111) -- [#, (, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NCN1 | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [C, N, c, n]
+    [Dead Node] New child NCN1 died immediately.
+    [Disc & Sim] Prefix: NCNS | Eff: 21.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, O, c]
+    [Dead Node] New child NCNS died immediately.
+Loop 60/500 | R: 0.0000 | BestAvgPrefix: NCN
+    [Disc & Sim] Prefix: NCNO | Eff: 2.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [C, N, O, c]
+    [Dead Node] New child NCNO died immediately.
+    [Disc & Sim] Prefix: NCNn | Eff: 6.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCNn died immediately.
+    [Disc & Sim] Prefix: NCNC | Eff: 47.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Dead Node] New child NCNC died immediately.
+    [Disc & Sim] Prefix: NCN= | Eff: 0.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [C]
+    [Dead Node] New child NCN= died immediately.
+    [Disc & Sim] Prefix: NCN( | Eff: 79.50% | AvgLogP: 1.3705 | MAE: 0.8100 | R: 0.4448 | Found 4 children (uniform prior=0.2500) -- [C, N, O, c]
+    [Disc & Sim] Prefix: NCNN | Eff: 10.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, S, c, n]
+    [Dead Node] New child NCNN died immediately.
+    [Disc & Sim] Prefix: NCNc | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCNc died immediately.
+    [Disc & Sim] Prefix: NCN(c | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCN(c died immediately.
+    [Disc & Sim] Prefix: NCN(O | Eff: 87.00% | AvgLogP: 1.4139 | MAE: 0.9712 | R: 0.3786 | Found 4 children (uniform prior=0.2500) -- [), C, O, c]
+    [Disc & Sim] Prefix: NOC1 | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, =, C, N, c]
+    [Dead Node] New child NOC1 died immediately.
+Loop 70/500 | R: 0.0000 | BestAvgPrefix: NCN(
+    [Disc & Sim] Prefix: NOCO | Eff: 28.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Dead Node] New child NOCO died immediately.
+    [Disc & Sim] Prefix: NOCn | Eff: 6.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCn died immediately.
+    [Disc & Sim] Prefix: NOCC | Eff: 78.50% | AvgLogP: 1.2959 | MAE: 0.7944 | R: 0.4519 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOCc | Eff: 72.00% | AvgLogP: 1.9784 | MAE: 1.1714 | R: 0.3099 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NNc1 | Eff: 91.50% | AvgLogP: 1.7562 | MAE: 0.9738 | R: 0.3776 | Found 6 children (uniform prior=0.1667) -- [C, N, c, n, o, s]
+    [Disc & Sim] Prefix: NSN | Eff: 41.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, N, S, c]
+    [Dead Node] New child NSN died immediately.
+    [Disc & Sim] Prefix: NSO | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, c]
+    [Dead Node] New child NSO died immediately.
+    [Disc & Sim] Prefix: NS1 | Eff: 11.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, C, O, c, n]
+    [Dead Node] New child NS1 died immediately.
+    [Disc & Sim] Prefix: NSC | Eff: 85.00% | AvgLogP: 2.6324 | MAE: 1.7373 | R: 0.1760 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, c, n]
+    [Disc & Sim] Prefix: NCOC | Eff: 73.00% | AvgLogP: 1.0579 | MAE: 0.7641 | R: 0.4657 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, c, n]
+Loop 80/500 | R: 0.4657 | BestAvgPrefix: NCOC
+    [Disc & Sim] Prefix: NCOS | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, C, N, O, c, n]
+    [Dead Node] New child NCOS died immediately.
+    [Disc & Sim] Prefix: NCOc | Eff: 76.50% | AvgLogP: 1.7255 | MAE: 0.9061 | R: 0.4041 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NCCN | Eff: 57.50% | AvgLogP: 0.8610 | MAE: 0.9702 | R: 0.3790 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NNCc1 | Eff: 93.50% | AvgLogP: 1.6163 | MAE: 0.9646 | R: 0.3811 | Found 4 children (uniform prior=0.2500) -- [(, [nH], c, n]
+    [Disc & Sim] Prefix: NCOn | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCOn died immediately.
+    [Disc & Sim] Prefix: NCOCO | Eff: 16.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Dead Node] New child NCOCO died immediately.
+    [Disc & Sim] Prefix: NCOC( | Eff: 87.50% | AvgLogP: 1.1230 | MAE: 0.7124 | R: 0.4905 | Found 4 children (uniform prior=0.2500) -- [=, C, N, c]
+    [Disc & Sim] Prefix: NCOCn | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCOCn died immediately.
+    [Disc & Sim] Prefix: NCOCC | Eff: 49.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Dead Node] New child NCOCC died immediately.
+    [Disc & Sim] Prefix: NCOCc | Eff: 24.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NCOCc died immediately.
+Loop 90/500 | R: 0.0000 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: NCOCN | Eff: 35.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Dead Node] New child NCOCN died immediately.
+    [Disc & Sim] Prefix: NCOC1 | Eff: 20.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, N, O]
+    [Dead Node] New child NCOC1 died immediately.
+    [Disc & Sim] Prefix: NCOC(N | Eff: 85.00% | AvgLogP: 0.7886 | MAE: 0.7903 | R: 0.4537 | Found 5 children (uniform prior=0.2000) -- [), =, C, O, c]
+    [Disc & Sim] Prefix: NC(F | Eff: 19.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NC(F died immediately.
+    [Disc & Sim] Prefix: NC(C | Eff: 91.00% | AvgLogP: 1.4713 | MAE: 0.9067 | R: 0.4039 | Found 8 children (uniform prior=0.1250) -- [#, (, ), C, N, O, c, n]
+    [Disc & Sim] Prefix: NCN(N | Eff: 79.00% | AvgLogP: 0.9190 | MAE: 0.8555 | R: 0.4251 | Found 8 children (uniform prior=0.1250) -- [(, ), =, C, N, O, S, c]
+    [Disc & Sim] Prefix: NCOc1 | Eff: 92.50% | AvgLogP: 1.6466 | MAE: 0.8762 | R: 0.4164 | Found 4 children (uniform prior=0.2500) -- [C, c, n, s]
+    [Disc & Sim] Prefix: NOc1 | Eff: 96.50% | AvgLogP: 1.7991 | MAE: 0.9638 | R: 0.3814 | Found 3 children (uniform prior=0.3333) -- [C, c, n]
+    [Disc & Sim] Prefix: NCN(C | Eff: 93.50% | AvgLogP: 1.3279 | MAE: 0.8640 | R: 0.4215 | Found 6 children (uniform prior=0.1667) -- [(, ), C, N, O, c]
+    [Disc & Sim] Prefix: Nc1[nH] | Eff: 13.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child Nc1[nH] died immediately.
+Loop 100/500 | R: 0.0000 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: Nc1o | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child Nc1o died immediately.
+    [Disc & Sim] Prefix: Nc1s | Eff: 14.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, c, n]
+    [Dead Node] New child Nc1s died immediately.
+    [Disc & Sim] Prefix: Nc1c | Eff: 93.00% | AvgLogP: 2.1931 | MAE: 1.3449 | R: 0.2606 | Found 6 children (uniform prior=0.1667) -- [(, [nH], c, n, o, s]
+    [Disc & Sim] Prefix: N#C | Eff: 92.00% | AvgLogP: 2.5659 | MAE: 1.6276 | R: 0.1964 | Found 4 children (uniform prior=0.2500) -- [C, N, c, n]
+    [Disc & Sim] Prefix: NC(= | Eff: 93.50% | AvgLogP: 1.8606 | MAE: 1.0073 | R: 0.3652 | Found 2 children (uniform prior=0.5000) -- [N, O]
+    [Disc & Sim] Prefix: NNC(O | Eff: 84.50% | AvgLogP: 1.2936 | MAE: 0.9374 | R: 0.3917 | Found 7 children (uniform prior=0.1429) -- [), C, N, O, S, c, n]
+    [Disc & Sim] Prefix: N=C | Eff: 93.00% | AvgLogP: 2.6379 | MAE: 1.7479 | R: 0.1741 | Found 5 children (uniform prior=0.2000) -- [(, 1, C, S, c]
+    [Disc & Sim] Prefix: NOc1n | Eff: 97.50% | AvgLogP: 1.2862 | MAE: 0.7182 | R: 0.4877 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Disc & Sim] Prefix: NOc1c | Eff: 95.50% | AvgLogP: 1.8152 | MAE: 0.9995 | R: 0.3681 | Found 3 children (uniform prior=0.3333) -- [(, c, n]
+    [Disc & Sim] Prefix: NOc1C | Eff: 3.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, C, N, O, n]
+    [Dead Node] New child NOc1C died immediately.
+Loop 110/500 | R: 0.0000 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: NOc1nc | Eff: 97.00% | AvgLogP: 1.3857 | MAE: 0.7793 | R: 0.4587 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: NOCC1 | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, c, n]
+    [Dead Node] New child NOCC1 died immediately.
+    [Disc & Sim] Prefix: NOCCC | Eff: 83.00% | AvgLogP: 1.7309 | MAE: 0.9902 | R: 0.3715 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: FN | Eff: 71.00% | AvgLogP: 2.2911 | MAE: 1.4763 | R: 0.2285 | Found 9 children (uniform prior=0.1111) -- [(, 1, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NNc1s | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, c, n]
+    [Dead Node] New child NNc1s died immediately.
+    [Disc & Sim] Prefix: NNc1n | Eff: 93.50% | AvgLogP: 1.4173 | MAE: 0.7746 | R: 0.4609 | Found 6 children (uniform prior=0.1667) -- [(, [nH], c, n, o, s]
+    [Disc & Sim] Prefix: NNc1c | Eff: 94.50% | AvgLogP: 1.8864 | MAE: 1.1080 | R: 0.3302 | Found 6 children (uniform prior=0.1667) -- [(, 2, c, n, o, s]
+    [Disc & Sim] Prefix: NCC( | Eff: 85.50% | AvgLogP: 1.3728 | MAE: 0.8668 | R: 0.4203 | Found 7 children (uniform prior=0.1429) -- [=, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NCOC(C | Eff: 87.00% | AvgLogP: 0.8935 | MAE: 0.7835 | R: 0.4568 | Found 7 children (uniform prior=0.1429) -- [#, (, ), C, N, O, c]
+    [Disc & Sim] Prefix: NCOC(= | Eff: 96.00% | AvgLogP: 1.0965 | MAE: 0.8019 | R: 0.4485 | Found 1 children (uniform prior=1.0000) -- [O]
+Loop 120/500 | R: 0.4485 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: NCN(N( | Eff: 2.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [C]
+    [Dead Node] New child NCN(N( died immediately.
+    [Disc & Sim] Prefix: NCN(N) | Eff: 50.50% | AvgLogP: 0.4814 | MAE: 1.0139 | R: 0.3628 | Found 6 children (uniform prior=0.1667) -- [(, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1n[nH] | Eff: 17.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1n[nH] died immediately.
+    [Disc & Sim] Prefix: NOc1nn | Eff: 83.00% | AvgLogP: 1.0527 | MAE: 0.7922 | R: 0.4528 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: NOc1c( | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [-, Br, C, Cl, F, N, O]
+    [Dead Node] New child NOc1c( died immediately.
+    [Disc & Sim] Prefix: NOc1cn | Eff: 80.50% | AvgLogP: 1.2667 | MAE: 0.7251 | R: 0.4843 | Found 4 children (uniform prior=0.2500) -- [(, c, n, s]
+    [Disc & Sim] Prefix: NOc1cc | Eff: 97.00% | AvgLogP: 1.7941 | MAE: 1.0547 | R: 0.3483 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NOC(= | Eff: 94.50% | AvgLogP: 1.3854 | MAE: 0.8597 | R: 0.4233 | Found 4 children (uniform prior=0.2500) -- [C, N, O, S]
+    [Disc & Sim] Prefix: NCC1 | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, C, N, O, c, n]
+    [Dead Node] New child NCC1 died immediately.
+    [Disc & Sim] Prefix: NCCc | Eff: 60.50% | AvgLogP: 2.0497 | MAE: 1.2143 | R: 0.2969 | Found 1 children (uniform prior=1.0000) -- [1]
+Loop 130/500 | R: 0.2969 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: ClO | Eff: 84.00% | AvgLogP: 2.7866 | MAE: 1.8243 | R: 0.1613 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1no | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1no died immediately.
+    [Disc & Sim] Prefix: NOc1ns | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, C, c]
+    [Dead Node] New child NOc1ns died immediately.
+    [Disc & Sim] Prefix: NOc1ncn | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Dead Node] New child NOc1ncn died immediately.
+    [Disc & Sim] Prefix: NOc1nc( | Eff: 74.00% | AvgLogP: 1.2069 | MAE: 0.8481 | R: 0.4282 | Found 9 children (uniform prior=0.1111) -- [-, =, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NNCCN | Eff: 65.50% | AvgLogP: 0.6783 | MAE: 0.7799 | R: 0.4584 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NNCC( | Eff: 71.50% | AvgLogP: 0.9816 | MAE: 0.8867 | R: 0.4120 | Found 5 children (uniform prior=0.2000) -- [=, C, N, O, c]
+    [Disc & Sim] Prefix: NNCCn | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NNCCn died immediately.
+    [Disc & Sim] Prefix: NNCCO | Eff: 55.00% | AvgLogP: 0.9495 | MAE: 0.8081 | R: 0.4457 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NNCc1n | Eff: 95.50% | AvgLogP: 1.0745 | MAE: 0.7550 | R: 0.4700 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+Loop 140/500 | R: 0.4700 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: NNCc1( | Eff: 7.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, c]
+    [Dead Node] New child NNCc1( died immediately.
+    [Disc & Sim] Prefix: NNCc1[nH] | Eff: 5.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, c, n]
+    [Dead Node] New child NNCc1[nH] died immediately.
+    [Disc & Sim] Prefix: NNCc1c | Eff: 96.50% | AvgLogP: 1.5619 | MAE: 0.9114 | R: 0.4020 | Found 4 children (uniform prior=0.2500) -- [(, c, n, s]
+    [Disc & Sim] Prefix: NNC(N | Eff: 89.50% | AvgLogP: 1.5531 | MAE: 1.0050 | R: 0.3660 | Found 7 children (uniform prior=0.1429) -- [1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOCCN | Eff: 79.00% | AvgLogP: 0.9455 | MAE: 0.8552 | R: 0.4252 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: OC | Eff: 92.50% | AvgLogP: 1.8289 | MAE: 1.1908 | R: 0.3040 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nn( | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [-, C, N]
+    [Dead Node] New child NOc1nn( died immediately.
+    [Disc & Sim] Prefix: NOc1nnc | Eff: 87.50% | AvgLogP: 0.8359 | MAE: 0.7328 | R: 0.4806 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NOc1nnn | Eff: 47.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NOc1nnn died immediately.
+    [Disc & Sim] Prefix: NOc1nn2 | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nn2 died immediately.
+Loop 150/500 | R: 0.0000 | BestAvgPrefix: NCOC(
+    [Disc & Sim] Prefix: NOc1nns | Eff: 55.50% | AvgLogP: 1.0514 | MAE: 0.6493 | R: 0.5224 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nnsc | Eff: 33.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOc1nnsc died immediately.
+    [Disc & Sim] Prefix: NOc1nns2 | Eff: 34.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, [nH], c, n, s]
+    [Dead Node] New child NOc1nns2 died immediately.
+    [Disc & Sim] Prefix: NOc1nns( | Eff: 81.00% | AvgLogP: 1.0282 | MAE: 0.7461 | R: 0.4742 | Found 8 children (uniform prior=0.1250) -- [-, C, Cl, F, N, O, S, c]
+    [Disc & Sim] Prefix: NOc1cn( | Eff: 6.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [-, Br, C, N]
+    [Dead Node] New child NOc1cn( died immediately.
+    [Disc & Sim] Prefix: NOc1cnn | Eff: 45.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NOc1cnn died immediately.
+    [Disc & Sim] Prefix: NOc1cns | Eff: 53.00% | AvgLogP: 1.3807 | MAE: 0.7500 | R: 0.4724 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nc2 | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Dead Node] New child NOc1nc2 died immediately.
+    [Disc & Sim] Prefix: NOc1ncs | Eff: 49.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NOc1ncs died immediately.
+    [Disc & Sim] Prefix: NOc1ncc | Eff: 96.50% | AvgLogP: 1.3387 | MAE: 0.7856 | R: 0.4558 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+Loop 160/500 | R: 0.4558 | BestAvgPrefix: NOc1nns
+    [Disc & Sim] Prefix: NOC(C | Eff: 88.50% | AvgLogP: 1.6911 | MAE: 1.0877 | R: 0.3370 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cnc | Eff: 94.00% | AvgLogP: 1.2707 | MAE: 0.7663 | R: 0.4647 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1cns( | Eff: 93.00% | AvgLogP: 1.3860 | MAE: 0.7310 | R: 0.4814 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NOc1nnc2 | Eff: 42.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Dead Node] New child NOc1nnc2 died immediately.
+    [Disc & Sim] Prefix: NOc1nncc | Eff: 79.00% | AvgLogP: 0.8276 | MAE: 0.6371 | R: 0.5288 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nnc( | Eff: 84.00% | AvgLogP: 0.8937 | MAE: 0.7872 | R: 0.4551 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NOc1ccc | Eff: 96.50% | AvgLogP: 1.8206 | MAE: 1.0403 | R: 0.3534 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1ncc( | Eff: 93.00% | AvgLogP: 1.1548 | MAE: 0.7665 | R: 0.4646 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NOc1nns(F | Eff: 20.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nns(F died immediately.
+    [Disc & Sim] Prefix: NOc1nns(S | Eff: 92.00% | AvgLogP: 1.4064 | MAE: 0.9008 | R: 0.4062 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, =, C, N, S, c, n]
+Loop 170/500 | R: 0.4062 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: Nc1n | Eff: 92.50% | AvgLogP: 1.6860 | MAE: 0.9942 | R: 0.3700 | Found 8 children (uniform prior=0.1250) -- [(, 2, C, [nH], c, n, o, s]
+    [Disc & Sim] Prefix: NOCCc | Eff: 28.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCCc died immediately.
+    [Disc & Sim] Prefix: NOCCO | Eff: 58.00% | AvgLogP: 1.4239 | MAE: 0.8962 | R: 0.4081 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1cncc | Eff: 82.00% | AvgLogP: 1.2880 | MAE: 0.7724 | R: 0.4619 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nc(- | Eff: 58.50% | AvgLogP: 1.6456 | MAE: 0.9507 | R: 0.3865 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NSS | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, N, O, c]
+    [Dead Node] New child NSS died immediately.
+    [Disc & Sim] Prefix: NSc | Eff: 58.50% | AvgLogP: 2.3623 | MAE: 1.4673 | R: 0.2306 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOCC( | Eff: 80.00% | AvgLogP: 1.1706 | MAE: 0.9043 | R: 0.4048 | Found 6 children (uniform prior=0.1667) -- [=, C, F, N, O, c]
+    [Disc & Sim] Prefix: NOc1cns2 | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, [nH], c, n, o, s]
+    [Dead Node] New child NOc1cns2 died immediately.
+    [Disc & Sim] Prefix: NOc1cnsc | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [1, c]
+    [Dead Node] New child NOc1cnsc died immediately.
+Loop 180/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: NOc1cns(Br | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cns(Br died immediately.
+    [Disc & Sim] Prefix: NOc1cns(O | Eff: 79.50% | AvgLogP: 1.3082 | MAE: 0.7241 | R: 0.4848 | Found 5 children (uniform prior=0.2000) -- [), C, N, c, n]
+    [Disc & Sim] Prefix: NOc1cnc2 | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [[nH], c, n, o]
+    [Dead Node] New child NOc1cnc2 died immediately.
+    [Disc & Sim] Prefix: NOc1cnc( | Eff: 92.00% | AvgLogP: 1.2670 | MAE: 0.6905 | R: 0.5013 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NOc1cc( | Eff: 64.00% | AvgLogP: 1.8228 | MAE: 1.0375 | R: 0.3543 | Found 9 children (uniform prior=0.1111) -- [-, =, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: C= | Eff: 50.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [1, C, N, c]
+    [Dead Node] New child C= died immediately.
+    [Disc & Sim] Prefix: Cc | Eff: 78.50% | AvgLogP: 2.5051 | MAE: 1.5686 | R: 0.2083 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOCc1 | Eff: 94.00% | AvgLogP: 1.9239 | MAE: 1.1469 | R: 0.3176 | Found 4 children (uniform prior=0.2500) -- [(, c, n, s]
+    [Disc & Sim] Prefix: Nc1ns | Eff: 63.50% | AvgLogP: 1.7800 | MAE: 1.0969 | R: 0.3339 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: N#Cn | Eff: 5.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child N#Cn died immediately.
+Loop 190/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: N#Cc | Eff: 87.50% | AvgLogP: 2.6512 | MAE: 1.6715 | R: 0.1880 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: BrN | Eff: 74.00% | AvgLogP: 2.6346 | MAE: 1.6676 | R: 0.1887 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NNc1N | Eff: 7.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, c, n]
+    [Dead Node] New child NNc1N died immediately.
+    [Disc & Sim] Prefix: NNc1C | Eff: 11.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, C, N, O, c, n]
+    [Dead Node] New child NNc1C died immediately.
+    [Disc & Sim] Prefix: NNc1o | Eff: 13.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NNc1o died immediately.
+    [Disc & Sim] Prefix: NNc1n( | Eff: 3.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [-, C, S]
+    [Dead Node] New child NNc1n( died immediately.
+    [Disc & Sim] Prefix: NNc1ns | Eff: 54.00% | AvgLogP: 1.1598 | MAE: 0.8596 | R: 0.4233 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NOc1nncn | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 1, 2, c]
+    [Dead Node] New child NOc1nncn died immediately.
+    [Disc & Sim] Prefix: NOc1nncc( | Eff: 86.50% | AvgLogP: 0.7371 | MAE: 0.6997 | R: 0.4968 | Found 8 children (uniform prior=0.1250) -- [-, =, C, Cl, N, O, S, c]
+    [Disc & Sim] Prefix: NOc1nnccc | Eff: 83.50% | AvgLogP: 0.9141 | MAE: 0.6863 | R: 0.5034 | Found 1 children (uniform prior=1.0000) -- [1]
+Loop 200/500 | R: 0.5034 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: NOc1nns(N | Eff: 88.50% | AvgLogP: 0.8322 | MAE: 0.7027 | R: 0.4953 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, c, n]
+    [Disc & Sim] Prefix: NOc1nnc(N | Eff: 88.00% | AvgLogP: 0.8034 | MAE: 0.6866 | R: 0.5033 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nns(c | Eff: 3.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(c died immediately.
+    [Disc & Sim] Prefix: NOc1nns(O | Eff: 73.50% | AvgLogP: 0.8913 | MAE: 0.6542 | R: 0.5198 | Found 7 children (uniform prior=0.1429) -- [), C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnc(F | Eff: 25.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nnc(F died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(S | Eff: 94.00% | AvgLogP: 1.2361 | MAE: 0.8133 | R: 0.4434 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1cns(Cl | Eff: 31.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cns(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1cns(- | Eff: 69.50% | AvgLogP: 1.4587 | MAE: 0.8021 | R: 0.4484 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1ncc2 | Eff: 37.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [[nH], c, n, o]
+    [Dead Node] New child NOc1ncc2 died immediately.
+    [Disc & Sim] Prefix: NOc1nccc | Eff: 83.50% | AvgLogP: 1.4142 | MAE: 0.7958 | R: 0.4512 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+Loop 210/500 | R: 0.4512 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: NOc1nns(Cl | Eff: 16.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nns(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1nns(- | Eff: 70.00% | AvgLogP: 1.2617 | MAE: 0.7319 | R: 0.4810 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cnc(N | Eff: 90.00% | AvgLogP: 1.3594 | MAE: 0.7368 | R: 0.4786 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nccn | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 1, 2, c]
+    [Dead Node] New child NOc1nccn died immediately.
+    [Disc & Sim] Prefix: NOc1ncc(F | Eff: 35.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1ncc(F died immediately.
+    [Disc & Sim] Prefix: NOc1ncc(C | Eff: 98.50% | AvgLogP: 1.2443 | MAE: 0.6972 | R: 0.4980 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cncc2 | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [1, [nH], c, n, o, s]
+    [Dead Node] New child NOc1cncc2 died immediately.
+    [Disc & Sim] Prefix: NOc1cncc( | Eff: 86.00% | AvgLogP: 1.3607 | MAE: 0.7606 | R: 0.4674 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: NOc1nns(C | Eff: 77.50% | AvgLogP: 1.1628 | MAE: 0.7073 | R: 0.4930 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nccc2 | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [[nH], c, n, s]
+    [Dead Node] New child NOc1nccc2 died immediately.
+Loop 220/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: NOc1ncccc | Eff: 89.00% | AvgLogP: 1.4118 | MAE: 0.7518 | R: 0.4715 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: FO | Eff: 81.00% | AvgLogP: 2.6056 | MAE: 1.7180 | R: 0.1794 | Found 5 children (uniform prior=0.2000) -- [C, N, O, S, c]
+    [Disc & Sim] Prefix: NOc1ccn | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [2, c]
+    [Dead Node] New child NOc1ccn died immediately.
+    [Disc & Sim] Prefix: NOc1cc2 | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [[nH], c, n]
+    [Dead Node] New child NOc1cc2 died immediately.
+    [Disc & Sim] Prefix: NOc1cc(Cl | Eff: 52.00% | AvgLogP: 2.2065 | MAE: 1.3779 | R: 0.2521 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Disc & Sim] Prefix: NOC(N | Eff: 85.00% | AvgLogP: 1.6772 | MAE: 1.0932 | R: 0.3351 | Found 8 children (uniform prior=0.1250) -- [(, ), 1, =, C, O, c, n]
+    [Disc & Sim] Prefix: N=1 | Eff: 24.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [C, [nH], c, n, o, s]
+    [Dead Node] New child N=1 died immediately.
+    [Disc & Sim] Prefix: N=S | Eff: 73.00% | AvgLogP: 2.5399 | MAE: 1.6083 | R: 0.2002 | Found 5 children (uniform prior=0.2000) -- [(, 1, C, N, c]
+    [Disc & Sim] Prefix: OS | Eff: 86.00% | AvgLogP: 3.2301 | MAE: 2.2677 | R: 0.1035 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: [H]# | Eff: 63.00% | AvgLogP: 2.4931 | MAE: 1.6108 | R: 0.1997 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+Loop 230/500 | R: 0.1997 | BestAvgPrefix: NOc1nncc
+    [Disc & Sim] Prefix: NOc1nncc2 | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [c, n, s]
+    [Dead Node] New child NOc1nncc2 died immediately.
+    [Disc & Sim] Prefix: NOc1nnccc1 | Eff: 97.50% | AvgLogP: 0.9469 | MAE: 0.6478 | R: 0.5232 | Found 5 children (uniform prior=0.2000) -- [-, C, N, O, S]
+    [Disc & Sim] Prefix: NOc1nncc(c | Eff: 2.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nncc(c died immediately.
+    [Disc & Sim] Prefix: NOc1nncc(- | Eff: 72.50% | AvgLogP: 0.8733 | MAE: 0.6211 | R: 0.5374 | Found 5 children (uniform prior=0.2000) -- [C, N, O, c, n]
+    [Disc & Sim] Prefix: NOc1nns(OC | Eff: 84.00% | AvgLogP: 1.0709 | MAE: 0.6990 | R: 0.4971 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1nncc(S | Eff: 85.00% | AvgLogP: 0.9631 | MAE: 0.7227 | R: 0.4854 | Found 9 children (uniform prior=0.1111) -- [(, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1ncc(- | Eff: 75.50% | AvgLogP: 1.4349 | MAE: 0.7652 | R: 0.4653 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(N2 | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, N]
+    [Dead Node] New child NOc1nns(N2 died immediately.
+    [Disc & Sim] Prefix: NOc1nns(Nn | Eff: 7.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(Nn died immediately.
+    [Disc & Sim] Prefix: NOc1nns(N) | Eff: 47.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nns(N) died immediately.
+Loop 240/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nns(NC | Eff: 93.50% | AvgLogP: 0.7968 | MAE: 0.7379 | R: 0.4781 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1nnc(C | Eff: 86.00% | AvgLogP: 0.8414 | MAE: 0.7102 | R: 0.4915 | Found 10 children (uniform prior=0.1000) -- [(, ), 2, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nc(S | Eff: 84.00% | AvgLogP: 1.5645 | MAE: 0.9458 | R: 0.3884 | Found 11 children (uniform prior=0.0909) -- [#, (, ), 2, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnccc1O | Eff: 79.00% | AvgLogP: 0.8793 | MAE: 0.7244 | R: 0.4846 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(CO | Eff: 41.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [), C, N, c]
+    [Dead Node] New child NOc1nns(CO died immediately.
+    [Disc & Sim] Prefix: NOc1nns(Cn | Eff: 24.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(Cn died immediately.
+    [Disc & Sim] Prefix: NOc1nns(C) | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nns(C) died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CC | Eff: 62.50% | AvgLogP: 1.2661 | MAE: 0.6538 | R: 0.5201 | Found 9 children (uniform prior=0.1111) -- [(, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cns(N | Eff: 85.50% | AvgLogP: 1.0280 | MAE: 0.7381 | R: 0.4780 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nns(-S | Eff: 28.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Dead Node] New child NOc1nns(-S died immediately.
+Loop 250/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nns(-c | Eff: 79.00% | AvgLogP: 1.3778 | MAE: 0.7443 | R: 0.4751 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Disc & Sim] Prefix: NOc1cnc(Cl | Eff: 31.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cnc(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1cnc(S | Eff: 97.00% | AvgLogP: 1.2463 | MAE: 0.8287 | R: 0.4366 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnc(O | Eff: 80.50% | AvgLogP: 0.8041 | MAE: 0.7300 | R: 0.4819 | Found 6 children (uniform prior=0.1667) -- [), C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(Oc | Eff: 43.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(Oc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ON | Eff: 70.50% | AvgLogP: 0.7980 | MAE: 0.6499 | R: 0.5221 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, S, c]
+    [Disc & Sim] Prefix: NOc1nns(CS | Eff: 50.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, 2, C, N, O, S, c]
+    [Dead Node] New child NOc1nns(CS died immediately.
+    [Disc & Sim] Prefix: NOc1nns(Cc | Eff: 25.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(Cc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CN | Eff: 78.00% | AvgLogP: 0.9733 | MAE: 0.7183 | R: 0.4876 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nncc(N | Eff: 83.00% | AvgLogP: 0.7506 | MAE: 0.6998 | R: 0.4967 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, C, N, O, S, c]
+Loop 260/500 | R: 0.4967 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nnc(Br | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nnc(Br died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(Cl | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nnc(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(- | Eff: 79.50% | AvgLogP: 1.0346 | MAE: 0.7224 | R: 0.4856 | Found 4 children (uniform prior=0.2500) -- [C, N, c, n]
+    [Disc & Sim] Prefix: NOc1cns(C | Eff: 90.00% | AvgLogP: 1.5213 | MAE: 0.7928 | R: 0.4526 | Found 9 children (uniform prior=0.1111) -- [#, (, ), 2, =, C, N, c, n]
+    [Disc & Sim] Prefix: NOCCn | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCCn died immediately.
+    [Disc & Sim] Prefix: NOCCS | Eff: 66.00% | AvgLogP: 1.6367 | MAE: 1.0060 | R: 0.3657 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nccc( | Eff: 86.50% | AvgLogP: 1.2170 | MAE: 0.7035 | R: 0.4949 | Found 6 children (uniform prior=0.1667) -- [-, C, Cl, N, O, S]
+    [Disc & Sim] Prefix: NOc1ncc(O | Eff: 80.50% | AvgLogP: 1.1138 | MAE: 0.6735 | R: 0.5099 | Found 7 children (uniform prior=0.1429) -- [), C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nccc(- | Eff: 78.00% | AvgLogP: 1.3582 | MAE: 0.6513 | R: 0.5213 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1ncccc1 | Eff: 95.00% | AvgLogP: 1.5224 | MAE: 0.7969 | R: 0.4507 | Found 5 children (uniform prior=0.2000) -- [-, C, N, O, S]
+Loop 270/500 | R: 0.4507 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1cns(F | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cns(F died immediately.
+    [Disc & Sim] Prefix: NOc1cns(S | Eff: 92.00% | AvgLogP: 1.6107 | MAE: 0.8937 | R: 0.4091 | Found 9 children (uniform prior=0.1111) -- [#, (, ), 2, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(OS | Eff: 58.50% | AvgLogP: 1.2508 | MAE: 0.7562 | R: 0.4694 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nnccc1C | Eff: 97.50% | AvgLogP: 0.8719 | MAE: 0.7742 | R: 0.4611 | Found 9 children (uniform prior=0.1111) -- [#, (, 1, =, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1ncc(N | Eff: 89.00% | AvgLogP: 1.0975 | MAE: 0.7755 | R: 0.4605 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1cnccc | Eff: 81.50% | AvgLogP: 1.2292 | MAE: 0.6856 | R: 0.5038 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOc1cnccc1 | Eff: 97.50% | AvgLogP: 1.2896 | MAE: 0.6698 | R: 0.5118 | Found 5 children (uniform prior=0.2000) -- [-, C, N, O, S]
+    [Disc & Sim] Prefix: NOc1cnc(F | Eff: 30.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cnc(F died immediately.
+    [Disc & Sim] Prefix: NOc1cnc(Br | Eff: 18.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cnc(Br died immediately.
+    [Disc & Sim] Prefix: NOc1cnc(- | Eff: 77.50% | AvgLogP: 1.4207 | MAE: 0.8091 | R: 0.4453 | Found 4 children (uniform prior=0.2500) -- [C, N, c, n]
+Loop 280/500 | R: 0.4453 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nns(Nc | Eff: 35.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(Nc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NN | Eff: 38.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, S, c]
+    [Dead Node] New child NOc1nns(NN died immediately.
+    [Disc & Sim] Prefix: NOc1nns(N( | Eff: 23.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, O]
+    [Dead Node] New child NOc1nns(N( died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NCc | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(NCc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NC) | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nns(NC) died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NC2 | Eff: 22.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, =, C, c, n]
+    [Dead Node] New child NOc1nns(NC2 died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NCC | Eff: 41.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 9 children (uniform prior=0.1111) -- [(, 2, =, C, N, O, S, c, n]
+    [Dead Node] New child NOc1nns(NCC died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NCN | Eff: 10.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [2, C, N, c]
+    [Dead Node] New child NOc1nns(NCN died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NC( | Eff: 94.00% | AvgLogP: 0.8341 | MAE: 0.7272 | R: 0.4833 | Found 2 children (uniform prior=0.5000) -- [=, C]
+    [Disc & Sim] Prefix: NOc1nnc(NC | Eff: 94.00% | AvgLogP: 0.9929 | MAE: 0.6554 | R: 0.5192 | Found 5 children (uniform prior=0.2000) -- [(, ), 2, C, c]
+Loop 290/500 | R: 0.5192 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nns(-O | Eff: 14.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [), C, N, S, c]
+    [Dead Node] New child NOc1nns(-O died immediately.
+    [Disc & Sim] Prefix: NOc1nns(-N | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, S, c]
+    [Dead Node] New child NOc1nns(-N died immediately.
+    [Disc & Sim] Prefix: NOc1nns(-C | Eff: 58.00% | AvgLogP: 1.3642 | MAE: 0.7222 | R: 0.4857 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1cns(ON | Eff: 70.50% | AvgLogP: 1.1350 | MAE: 0.6889 | R: 0.5021 | Found 9 children (uniform prior=0.1111) -- [(, ), 2, =, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1ccc( | Eff: 97.50% | AvgLogP: 1.8975 | MAE: 1.0747 | R: 0.3414 | Found 8 children (uniform prior=0.1250) -- [-, Br, C, Cl, F, N, O, S]
+    [Disc & Sim] Prefix: Nc1nn | Eff: 71.00% | AvgLogP: 1.6121 | MAE: 0.9309 | R: 0.3942 | Found 6 children (uniform prior=0.1667) -- [(, 2, [nH], c, n, s]
+    [Disc & Sim] Prefix: NOCCN1 | Eff: 67.00% | AvgLogP: 0.6626 | MAE: 0.8071 | R: 0.4461 | Found 4 children (uniform prior=0.2500) -- [C, N, c, n]
+    [Disc & Sim] Prefix: NOCCOC | Eff: 63.50% | AvgLogP: 1.1737 | MAE: 0.7064 | R: 0.4934 | Found 5 children (uniform prior=0.2000) -- [(, 1, C, N, c]
+    [Disc & Sim] Prefix: NOCCOc | Eff: 75.50% | AvgLogP: 1.6738 | MAE: 0.8804 | R: 0.4146 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOc1nc(O | Eff: 72.50% | AvgLogP: 1.0293 | MAE: 0.7246 | R: 0.4845 | Found 6 children (uniform prior=0.1667) -- [), C, N, O, c, n]
+Loop 300/500 | R: 0.4845 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nncc(C | Eff: 92.50% | AvgLogP: 0.6271 | MAE: 0.7759 | R: 0.4603 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nc(F | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nc(F died immediately.
+    [Disc & Sim] Prefix: NOc1nc(Cl | Eff: 32.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nc(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1nc(C | Eff: 93.00% | AvgLogP: 1.4619 | MAE: 0.8520 | R: 0.4265 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOCC(= | Eff: 75.50% | AvgLogP: 0.9894 | MAE: 0.8439 | R: 0.4300 | Found 2 children (uniform prior=0.5000) -- [C, O]
+    [Disc & Sim] Prefix: NOc1nns(C# | Eff: 9.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, N]
+    [Dead Node] New child NOc1nns(C# died immediately.
+    [Disc & Sim] Prefix: NOc1nns(C( | Eff: 69.50% | AvgLogP: 1.2131 | MAE: 0.7275 | R: 0.4831 | Found 4 children (uniform prior=0.2500) -- [=, C, N, O]
+    [Disc & Sim] Prefix: NOc1nnc(C( | Eff: 71.00% | AvgLogP: 0.7530 | MAE: 0.7126 | R: 0.4903 | Found 6 children (uniform prior=0.1667) -- [=, C, F, N, O, c]
+    [Disc & Sim] Prefix: NOc1nns(OO | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [), C, N, O, S, c]
+    [Dead Node] New child NOc1nns(OO died immediately.
+    [Disc & Sim] Prefix: NOc1nns(On | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(On died immediately.
+Loop 310/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nns(O) | Eff: 48.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [[nH], c, n]
+    [Dead Node] New child NOc1nns(O) died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ON2 | Eff: 48.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, c, n]
+    [Dead Node] New child NOc1nns(ON2 died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONC | Eff: 69.00% | AvgLogP: 0.6924 | MAE: 0.7080 | R: 0.4926 | Found 6 children (uniform prior=0.1667) -- [(, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnccc1N | Eff: 87.50% | AvgLogP: 0.8802 | MAE: 0.6628 | R: 0.5154 | Found 6 children (uniform prior=0.1667) -- [(, 1, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nnc(-N | Eff: 43.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 2, C, S, c]
+    [Dead Node] New child NOc1nnc(-N died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(-n | Eff: 47.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nnc(-n died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(-C | Eff: 64.00% | AvgLogP: 0.9380 | MAE: 0.6441 | R: 0.5252 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1nnc(Oc | Eff: 51.50% | AvgLogP: 1.2993 | MAE: 0.7323 | R: 0.4808 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Disc & Sim] Prefix: NOc1cncc(O | Eff: 77.00% | AvgLogP: 1.2748 | MAE: 0.6303 | R: 0.5324 | Found 6 children (uniform prior=0.1667) -- [), C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1cnccc1- | Eff: 83.00% | AvgLogP: 1.4499 | MAE: 0.7892 | R: 0.4542 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+Loop 320/500 | R: 0.4542 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NS( | Eff: 83.50% | AvgLogP: 1.5112 | MAE: 0.9502 | R: 0.3867 | Found 5 children (uniform prior=0.2000) -- [=, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nns(S( | Eff: 61.00% | AvgLogP: 0.6807 | MAE: 0.7216 | R: 0.4860 | Found 4 children (uniform prior=0.2500) -- [=, C, N, O]
+    [Disc & Sim] Prefix: NOc1cns(NN | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Dead Node] New child NOc1cns(NN died immediately.
+    [Disc & Sim] Prefix: NOc1cns(N( | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, O]
+    [Dead Node] New child NOc1cns(N( died immediately.
+    [Disc & Sim] Prefix: NOc1cns(Nc | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(Nc died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NC | Eff: 96.00% | AvgLogP: 1.1816 | MAE: 0.6844 | R: 0.5044 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, =, C, N, c]
+    [Disc & Sim] Prefix: NOc1cns(On | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(On died immediately.
+    [Disc & Sim] Prefix: NOc1cns(Oc | Eff: 47.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(Oc died immediately.
+    [Disc & Sim] Prefix: NOc1cns(OC | Eff: 89.50% | AvgLogP: 1.3913 | MAE: 0.7396 | R: 0.4773 | Found 5 children (uniform prior=0.2000) -- [(, ), 2, C, c]
+    [Disc & Sim] Prefix: NOCCNc | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCCNc died immediately.
+Loop 330/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOCCNO | Eff: 6.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, c]
+    [Dead Node] New child NOCCNO died immediately.
+    [Disc & Sim] Prefix: NOCCNS | Eff: 38.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, N, c]
+    [Dead Node] New child NOCCNS died immediately.
+    [Disc & Sim] Prefix: NOCCNn | Eff: 8.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCCNn died immediately.
+    [Disc & Sim] Prefix: NOCCNN | Eff: 24.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 1, C, S, c]
+    [Dead Node] New child NOCCNN died immediately.
+    [Disc & Sim] Prefix: NOCCN( | Eff: 69.00% | AvgLogP: 1.3114 | MAE: 0.8869 | R: 0.4119 | Found 3 children (uniform prior=0.3333) -- [C, O, c]
+    [Disc & Sim] Prefix: Nc1n( | Eff: 1.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [=, C]
+    [Dead Node] New child Nc1n( died immediately.
+    [Disc & Sim] Prefix: Nc1n2 | Eff: 0.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 0 children (uniform prior=0.0000) -- []
+    [Dead Node] New child Nc1n2 died immediately.
+    [Disc & Sim] Prefix: Nc1nc | Eff: 90.00% | AvgLogP: 1.8781 | MAE: 1.1279 | R: 0.3237 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: Cln | Eff: 27.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child Cln died immediately.
+    [Disc & Sim] Prefix: ClS | Eff: 74.00% | AvgLogP: 3.3798 | MAE: 2.3859 | R: 0.0920 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, O, S, c]
+Loop 340/500 | R: 0.0920 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1ncc(Cl | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1ncc(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1ncc(Br | Eff: 21.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1ncc(Br died immediately.
+    [Disc & Sim] Prefix: NOc1ncc(S | Eff: 94.50% | AvgLogP: 1.3791 | MAE: 0.8454 | R: 0.4294 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1cnc(O | Eff: 85.00% | AvgLogP: 1.0077 | MAE: 0.7248 | R: 0.4844 | Found 5 children (uniform prior=0.2000) -- [), C, N, S, c]
+    [Disc & Sim] Prefix: NOc1cns(CN | Eff: 79.50% | AvgLogP: 1.5485 | MAE: 0.8236 | R: 0.4389 | Found 9 children (uniform prior=0.1111) -- [(, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(NC(C | Eff: 92.00% | AvgLogP: 0.7029 | MAE: 0.7537 | R: 0.4706 | Found 4 children (uniform prior=0.2500) -- [#, (, ), O]
+    [Disc & Sim] Prefix: NOc1nnccc1S | Eff: 98.50% | AvgLogP: 1.1470 | MAE: 0.7910 | R: 0.4534 | Found 9 children (uniform prior=0.1111) -- [#, (, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(-n | Eff: 42.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(-n died immediately.
+    [Disc & Sim] Prefix: NOc1nns(-CC | Eff: 65.50% | AvgLogP: 0.8699 | MAE: 0.6716 | R: 0.5109 | Found 8 children (uniform prior=0.1250) -- [(, 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NS(C | Eff: 86.50% | AvgLogP: 1.6099 | MAE: 1.0585 | R: 0.3470 | Found 9 children (uniform prior=0.1111) -- [#, (, ), 1, C, N, O, c, n]
+Loop 350/500 | R: 0.3470 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nnc(N) | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [2, c, n]
+    [Dead Node] New child NOc1nnc(N) died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(N2 | Eff: 49.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [C]
+    [Dead Node] New child NOc1nnc(N2 died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NN | Eff: 39.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 2, C, S, c]
+    [Dead Node] New child NOc1nnc(NN died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(Nc | Eff: 36.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nnc(Nc died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NS | Eff: 67.50% | AvgLogP: 0.9987 | MAE: 0.6550 | R: 0.5194 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1cncc(- | Eff: 72.00% | AvgLogP: 1.2336 | MAE: 0.7310 | R: 0.4814 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nns(C2 | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, =, C, N, O]
+    [Dead Node] New child NOc1nns(C2 died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CC( | Eff: 69.50% | AvgLogP: 1.1996 | MAE: 0.7281 | R: 0.4828 | Found 4 children (uniform prior=0.2500) -- [=, C, N, O]
+    [Disc & Sim] Prefix: NOCc1( | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [C, N, O, c]
+    [Dead Node] New child NOCc1( died immediately.
+    [Disc & Sim] Prefix: NOCc1s | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [(, c]
+    [Dead Node] New child NOCc1s died immediately.
+Loop 360/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOCc1c | Eff: 95.00% | AvgLogP: 2.1038 | MAE: 1.2207 | R: 0.2950 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: NOc1nccc(S | Eff: 89.50% | AvgLogP: 1.5032 | MAE: 0.9381 | R: 0.3914 | Found 10 children (uniform prior=0.1000) -- [(, ), 2, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cccc | Eff: 85.50% | AvgLogP: 2.0489 | MAE: 1.1519 | R: 0.3160 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nncc(O | Eff: 73.00% | AvgLogP: 0.6472 | MAE: 0.6937 | R: 0.4997 | Found 7 children (uniform prior=0.1429) -- [), C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnc(-c | Eff: 83.50% | AvgLogP: 1.0748 | MAE: 0.7396 | R: 0.4773 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Disc & Sim] Prefix: NOc1nns(S= | Eff: 17.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [2, C, N, c]
+    [Dead Node] New child NOc1nns(S= died immediately.
+    [Disc & Sim] Prefix: NOc1nns(S) | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nns(S) died immediately.
+    [Disc & Sim] Prefix: NOc1nns(SN | Eff: 66.50% | AvgLogP: 1.4144 | MAE: 0.8365 | R: 0.4332 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nncc(Cl | Eff: 12.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nncc(Cl died immediately.
+    [Disc & Sim] Prefix: NOc1nncc(= | Eff: 0.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [N]
+    [Dead Node] New child NOc1nncc(= died immediately.
+Loop 370/500 | R: 0.0000 | BestAvgPrefix: NOc1nncc(-
+    [Disc & Sim] Prefix: NOc1nncc(-n | Eff: 53.00% | AvgLogP: 0.5029 | MAE: 0.7856 | R: 0.4558 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Disc & Sim] Prefix: NOc1nnc(N( | Eff: 29.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, O]
+    [Dead Node] New child NOc1nnc(N( died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NS2 | Eff: 11.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, C, c, n]
+    [Dead Node] New child NOc1nnc(NS2 died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NSN | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, S, c]
+    [Dead Node] New child NOc1nnc(NSN died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NSc | Eff: 22.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nnc(NSc died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NS) | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, c, n]
+    [Dead Node] New child NOc1nnc(NS) died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NSC | Eff: 24.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, O, S, c]
+    [Dead Node] New child NOc1nnc(NSC died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(NS( | Eff: 93.50% | AvgLogP: 0.7953 | MAE: 0.6825 | R: 0.5054 | Found 3 children (uniform prior=0.3333) -- [=, C, O]
+    [Disc & Sim] Prefix: NOc1nns(OC) | Eff: 72.50% | AvgLogP: 0.8137 | MAE: 0.6122 | R: 0.5422 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Disc & Sim] Prefix: NOc1nns(-c2 | Eff: 77.00% | AvgLogP: 1.3267 | MAE: 0.7412 | R: 0.4765 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+Loop 380/500 | R: 0.4765 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1nnc(C) | Eff: 38.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nnc(C) died immediately.
+    [Disc & Sim] Prefix: NOc1nnc(CS | Eff: 57.50% | AvgLogP: 1.4279 | MAE: 0.7315 | R: 0.4812 | Found 8 children (uniform prior=0.1250) -- [#, (, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1cnc(C | Eff: 93.50% | AvgLogP: 1.3214 | MAE: 0.7769 | R: 0.4598 | Found 11 children (uniform prior=0.0909) -- [#, (, ), 2, =, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1nc(= | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, O]
+    [Dead Node] New child NOc1nc(= died immediately.
+    [Disc & Sim] Prefix: NOc1nc(N | Eff: 86.50% | AvgLogP: 0.9919 | MAE: 0.7910 | R: 0.4534 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, =, C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nns(OC( | Eff: 74.50% | AvgLogP: 1.2770 | MAE: 0.6837 | R: 0.5047 | Found 3 children (uniform prior=0.3333) -- [=, C, F]
+    [Disc & Sim] Prefix: BrO | Eff: 81.50% | AvgLogP: 2.9397 | MAE: 1.9832 | R: 0.1376 | Found 6 children (uniform prior=0.1667) -- [C, N, O, S, c, n]
+    [Disc & Sim] Prefix: N#CN | Eff: 46.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Dead Node] New child N#CN died immediately.
+    [Disc & Sim] Prefix: N#CC | Eff: 83.00% | AvgLogP: 2.3808 | MAE: 1.4981 | R: 0.2236 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: CN | Eff: 76.00% | AvgLogP: 2.0189 | MAE: 1.2252 | R: 0.2937 | Found 8 children (uniform prior=0.1250) -- [(, 1, =, C, N, O, S, c]
+Loop 390/500 | R: 0.2937 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1nns(NC(= | Eff: 95.00% | AvgLogP: 0.9707 | MAE: 0.6552 | R: 0.5193 | Found 1 children (uniform prior=1.0000) -- [O]
+    [Disc & Sim] Prefix: NOc1nns(CNS | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, C, c]
+    [Dead Node] New child NOc1nns(CNS died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CNN | Eff: 15.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), C, N, S, c]
+    [Dead Node] New child NOc1nns(CNN died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CNc | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(CNc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(CN( | Eff: 62.00% | AvgLogP: 1.3225 | MAE: 0.6926 | R: 0.5003 | Found 2 children (uniform prior=0.5000) -- [C, c]
+    [Disc & Sim] Prefix: NOc1cns(N2 | Eff: 44.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, C, N]
+    [Dead Node] New child NOc1cns(N2 died immediately.
+    [Disc & Sim] Prefix: NOc1cns(N) | Eff: 46.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1cns(N) died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NS | Eff: 65.00% | AvgLogP: 1.0191 | MAE: 0.6497 | R: 0.5222 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1cns(-S | Eff: 31.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 2, C, N, c]
+    [Dead Node] New child NOc1cns(-S died immediately.
+    [Disc & Sim] Prefix: NOc1cns(-C | Eff: 62.00% | AvgLogP: 1.4613 | MAE: 0.8640 | R: 0.4215 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, c, n]
+Loop 400/500 | R: 0.4215 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1nnccc1- | Eff: 74.50% | AvgLogP: 1.1238 | MAE: 0.6230 | R: 0.5363 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOc1nnccc1-c | Eff: 85.00% | AvgLogP: 1.0778 | MAE: 0.6952 | R: 0.4990 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOc1nns(OS) | Eff: 58.50% | AvgLogP: 1.1079 | MAE: 0.6444 | R: 0.5250 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NOc1nns(NC(=O | Eff: 93.50% | AvgLogP: 0.9300 | MAE: 0.6525 | R: 0.5207 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Disc & Sim] Prefix: NOc1nns(ONS | Eff: 41.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, N, c, n]
+    [Dead Node] New child NOc1nns(ONS died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONc | Eff: 30.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(ONc died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ON) | Eff: 36.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1nns(ON) died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ON( | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [C, O]
+    [Dead Node] New child NOc1nns(ON( died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONCn | Eff: 6.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nns(ONCn died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONCN | Eff: 29.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, N, O, c]
+    [Dead Node] New child NOc1nns(ONCN died immediately.
+Loop 410/500 | R: 0.0000 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1nns(ONCC | Eff: 25.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, 2, C, N, O, c]
+    [Dead Node] New child NOc1nns(ONCC died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONCS | Eff: 13.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, 2, C, N, O, S, c]
+    [Dead Node] New child NOc1nns(ONCS died immediately.
+    [Disc & Sim] Prefix: NOc1nns(ONC( | Eff: 87.50% | AvgLogP: 0.8508 | MAE: 0.6812 | R: 0.5060 | Found 4 children (uniform prior=0.2500) -- [=, C, N, O]
+    [Disc & Sim] Prefix: NOc1nnc(SS | Eff: 57.50% | AvgLogP: 1.8797 | MAE: 1.1561 | R: 0.3147 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1cncc(F | Eff: 10.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cncc(F died immediately.
+    [Disc & Sim] Prefix: NOc1cncc(Br | Eff: 8.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1cncc(Br died immediately.
+    [Disc & Sim] Prefix: NOc1cncc(C | Eff: 98.00% | AvgLogP: 1.3252 | MAE: 0.7695 | R: 0.4633 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOC(O | Eff: 82.50% | AvgLogP: 1.7166 | MAE: 0.9936 | R: 0.3703 | Found 6 children (uniform prior=0.1667) -- [), C, N, O, c, n]
+    [Disc & Sim] Prefix: NOc1cnc(OS | Eff: 74.00% | AvgLogP: 1.4907 | MAE: 0.8979 | R: 0.4074 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Disc & Sim] Prefix: N=c | Eff: 16.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child N=c died immediately.
+Loop 420/500 | R: 0.0000 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: N=S( | Eff: 86.00% | AvgLogP: 2.8007 | MAE: 1.8342 | R: 0.1597 | Found 5 children (uniform prior=0.2000) -- [=, C, N, O, c]
+    [Disc & Sim] Prefix: NOc1nc(Br | Eff: 32.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [)]
+    [Dead Node] New child NOc1nc(Br died immediately.
+    [Disc & Sim] Prefix: NOc1nc(ON | Eff: 63.00% | AvgLogP: 0.8724 | MAE: 0.6963 | R: 0.4984 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, O, S, c]
+    [Disc & Sim] Prefix: NOc1nc(OC | Eff: 81.50% | AvgLogP: 1.1564 | MAE: 0.6621 | R: 0.5158 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, O, c]
+    [Disc & Sim] Prefix: NOc1nc(N) | Eff: 75.00% | AvgLogP: 0.7667 | MAE: 0.7573 | R: 0.4689 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Disc & Sim] Prefix: NOc1nc(Oc | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nc(Oc died immediately.
+    [Disc & Sim] Prefix: NOc1nc(OO | Eff: 49.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [), C, N, c]
+    [Dead Node] New child NOc1nc(OO died immediately.
+    [Disc & Sim] Prefix: NOc1nc(On | Eff: 9.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nc(On died immediately.
+    [Disc & Sim] Prefix: NOc1nc(O) | Eff: 77.50% | AvgLogP: 0.7327 | MAE: 0.7107 | R: 0.4913 | Found 4 children (uniform prior=0.2500) -- [1, c, n, s]
+    [Disc & Sim] Prefix: NOc1ncc(On | Eff: 11.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1ncc(On died immediately.
+Loop 430/500 | R: 0.0000 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1ncc(OO | Eff: 55.50% | AvgLogP: 1.1964 | MAE: 0.7226 | R: 0.4855 | Found 5 children (uniform prior=0.2000) -- [), C, N, S, c]
+    [Disc & Sim] Prefix: NOc1nns(-CN | Eff: 27.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, 2, C, N, S, c, n]
+    [Dead Node] New child NOc1nns(-CN died immediately.
+    [Disc & Sim] Prefix: NOc1nns(-C( | Eff: 78.50% | AvgLogP: 1.3403 | MAE: 0.7567 | R: 0.4692 | Found 2 children (uniform prior=0.5000) -- [=, C]
+    [Disc & Sim] Prefix: NS(= | Eff: 93.50% | AvgLogP: 1.3808 | MAE: 0.8533 | R: 0.4260 | Found 1 children (uniform prior=1.0000) -- [O]
+    [Disc & Sim] Prefix: NOc1nc(OC) | Eff: 86.00% | AvgLogP: 1.1967 | MAE: 0.7041 | R: 0.4946 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Disc & Sim] Prefix: NOc1nc(C) | Eff: 75.50% | AvgLogP: 1.5457 | MAE: 0.7709 | R: 0.4626 | Found 3 children (uniform prior=0.3333) -- [c, n, s]
+    [Disc & Sim] Prefix: NOc1cns(NS) | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Dead Node] New child NOc1cns(NS) died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NS2 | Eff: 14.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [C, O, c, n]
+    [Dead Node] New child NOc1cns(NS2 died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NSN | Eff: 8.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [), 2, C, N, c, n]
+    [Dead Node] New child NOc1cns(NSN died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NSc | Eff: 15.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(NSc died immediately.
+Loop 440/500 | R: 0.0000 | BestAvgPrefix: NOc1nns(OC)
+    [Disc & Sim] Prefix: NOc1cns(NS( | Eff: 96.50% | AvgLogP: 0.9436 | MAE: 0.6094 | R: 0.5437 | Found 2 children (uniform prior=0.5000) -- [=, C]
+    [Disc & Sim] Prefix: NOc1cns(NC2 | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, =, C, N, n]
+    [Dead Node] New child NOc1cns(NC2 died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NC) | Eff: 23.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NOc1cns(NC) died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NCc | Eff: 19.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(NCc died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NC= | Eff: 1.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [2, C]
+    [Dead Node] New child NOc1cns(NC= died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NC( | Eff: 93.00% | AvgLogP: 1.1496 | MAE: 0.6456 | R: 0.5244 | Found 3 children (uniform prior=0.3333) -- [=, C, F]
+    [Disc & Sim] Prefix: NOc1cns(NSC | Eff: 21.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 2, C, N, c]
+    [Dead Node] New child NOc1cns(NSC died immediately.
+    [Disc & Sim] Prefix: NOc1cns(NS(C | Eff: 86.50% | AvgLogP: 0.9545 | MAE: 0.7592 | R: 0.4680 | Found 6 children (uniform prior=0.1667) -- [#, (, ), C, N, O]
+    [Disc & Sim] Prefix: NOc1ccc2 | Eff: 40.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [[nH], c, n, o, s]
+    [Dead Node] New child NOc1ccc2 died immediately.
+    [Disc & Sim] Prefix: NOc1ccc(- | Eff: 75.00% | AvgLogP: 2.0309 | MAE: 1.1338 | R: 0.3218 | Found 5 children (uniform prior=0.2000) -- [C, N, O, c, n]
+Loop 450/500 | R: 0.3218 | BestAvgPrefix: NOc1cns(NS(
+    [Disc & Sim] Prefix: NS(c | Eff: 8.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NS(c died immediately.
+    [Disc & Sim] Prefix: NS(S | Eff: 90.00% | AvgLogP: 2.4493 | MAE: 1.6122 | R: 0.1995 | Found 6 children (uniform prior=0.1667) -- [(, ), C, O, c, n]
+    [Disc & Sim] Prefix: NOc1nns(NC(C# | Eff: 10.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [N]
+    [Dead Node] New child NOc1nns(NC(C# died immediately.
+    [Disc & Sim] Prefix: NOc1nns(NC(C) | Eff: 67.50% | AvgLogP: 0.7019 | MAE: 0.7339 | R: 0.4801 | Found 7 children (uniform prior=0.1429) -- [(, =, C, N, O, S, c]
+    [Disc & Sim] Prefix: NOc1nns(C(= | Eff: 85.00% | AvgLogP: 1.3709 | MAE: 0.7697 | R: 0.4631 | Found 1 children (uniform prior=1.0000) -- [O]
+    [Disc & Sim] Prefix: Nc1n[nH] | Eff: 52.00% | AvgLogP: 1.3886 | MAE: 0.9480 | R: 0.3875 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Disc & Sim] Prefix: NOc1ncccc1- | Eff: 79.50% | AvgLogP: 1.6090 | MAE: 0.9360 | R: 0.3922 | Found 5 children (uniform prior=0.2000) -- [C, N, S, c, n]
+    [Disc & Sim] Prefix: NOCC(c | Eff: 12.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Dead Node] New child NOCC(c died immediately.
+    [Disc & Sim] Prefix: NOCC(N | Eff: 75.00% | AvgLogP: 1.1084 | MAE: 1.0782 | R: 0.3402 | Found 6 children (uniform prior=0.1667) -- [(, ), C, O, S, c]
+    [Disc & Sim] Prefix: NNc1n[nH] | Eff: 35.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NNc1n[nH] died immediately.
+Loop 460/500 | R: 0.0000 | BestAvgPrefix: NOc1cns(NS(
+    [Disc & Sim] Prefix: NNc1no | Eff: 43.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, n]
+    [Dead Node] New child NNc1no died immediately.
+    [Disc & Sim] Prefix: NNc1nc | Eff: 93.00% | AvgLogP: 1.2867 | MAE: 0.8063 | R: 0.4465 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: Fc | Eff: 77.00% | AvgLogP: 2.6622 | MAE: 1.7095 | R: 0.1810 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOc1nns(OS( | Eff: 67.50% | AvgLogP: 1.2621 | MAE: 0.7062 | R: 0.4935 | Found 5 children (uniform prior=0.2000) -- [=, C, F, O, c]
+    [Disc & Sim] Prefix: NOc1nns(SS | Eff: 59.00% | AvgLogP: 2.1061 | MAE: 1.2301 | R: 0.2922 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NNc1nn | Eff: 75.50% | AvgLogP: 1.1806 | MAE: 0.7289 | R: 0.4825 | Found 5 children (uniform prior=0.2000) -- [(, 2, c, n, s]
+    [Disc & Sim] Prefix: NNc1nns | Eff: 57.00% | AvgLogP: 0.9862 | MAE: 0.7769 | R: 0.4598 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NNc1ncc | Eff: 87.00% | AvgLogP: 1.3580 | MAE: 0.6993 | R: 0.4969 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NNc1ncn | Eff: 50.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NNc1ncn died immediately.
+    [Disc & Sim] Prefix: NNc1nc( | Eff: 82.50% | AvgLogP: 1.5490 | MAE: 0.9172 | R: 0.3997 | Found 7 children (uniform prior=0.1429) -- [-, =, C, Cl, N, O, S]
+Loop 470/500 | R: 0.3997 | BestAvgPrefix: NOc1cns(NS(
+    [Disc & Sim] Prefix: NNc1nn2 | Eff: 11.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [c, s]
+    [Dead Node] New child NNc1nn2 died immediately.
+    [Disc & Sim] Prefix: NNc1nnn | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NNc1nnn died immediately.
+    [Disc & Sim] Prefix: NNc1nn( | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 2 children (uniform prior=0.5000) -- [-, C]
+    [Dead Node] New child NNc1nn( died immediately.
+    [Disc & Sim] Prefix: NNc1nnc | Eff: 85.00% | AvgLogP: 1.2482 | MAE: 0.8111 | R: 0.4443 | Found 5 children (uniform prior=0.2000) -- [(, 1, 2, c, n]
+    [Disc & Sim] Prefix: NOc1cns(O) | Eff: 53.00% | AvgLogP: 1.0966 | MAE: 0.6246 | R: 0.5355 | Found 3 children (uniform prior=0.3333) -- [[nH], c, n]
+    [Disc & Sim] Prefix: NOc1cns(Sn | Eff: 20.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1cns(Sn died immediately.
+    [Disc & Sim] Prefix: NOc1cns(SC | Eff: 88.00% | AvgLogP: 1.9731 | MAE: 1.1387 | R: 0.3202 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, c, n]
+    [Disc & Sim] Prefix: NNc1c( | Eff: 28.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 8 children (uniform prior=0.1250) -- [-, C, Cl, F, N, O, S, c]
+    [Dead Node] New child NNc1c( died immediately.
+    [Disc & Sim] Prefix: NNc1cs | Eff: 30.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Dead Node] New child NNc1cs died immediately.
+    [Disc & Sim] Prefix: NNc1cn | Eff: 78.50% | AvgLogP: 1.4657 | MAE: 0.8045 | R: 0.4473 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+Loop 480/500 | R: 0.4473 | BestAvgPrefix: NOc1cns(NS(
+    [Disc & Sim] Prefix: NOc1nncc(ON | Eff: 70.00% | AvgLogP: 0.2958 | MAE: 0.8810 | R: 0.4144 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, S, c, n]
+    [Disc & Sim] Prefix: NNc1cc | Eff: 92.00% | AvgLogP: 1.8103 | MAE: 0.9908 | R: 0.3713 | Found 3 children (uniform prior=0.3333) -- [(, 2, c]
+    [Disc & Sim] Prefix: NOc1nc(NC | Eff: 87.50% | AvgLogP: 1.3184 | MAE: 0.6679 | R: 0.5128 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Disc & Sim] Prefix: NOc1nc(Nc | Eff: 35.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nc(Nc died immediately.
+    [Disc & Sim] Prefix: NOc1nc(NN | Eff: 47.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 7 children (uniform prior=0.1429) -- [(, ), 2, C, N, S, c]
+    [Dead Node] New child NOc1nc(NN died immediately.
+    [Disc & Sim] Prefix: NOc1nc(NS | Eff: 44.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 6 children (uniform prior=0.1667) -- [(, ), 2, C, N, c]
+    [Dead Node] New child NOc1nc(NS died immediately.
+    [Disc & Sim] Prefix: NOc1nc(N( | Eff: 20.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, c]
+    [Dead Node] New child NOc1nc(N( died immediately.
+    [Disc & Sim] Prefix: NOc1nc(N= | Eff: 8.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 3 children (uniform prior=0.3333) -- [C, N, c]
+    [Dead Node] New child NOc1nc(N= died immediately.
+    [Disc & Sim] Prefix: NOc1nc(N2 | Eff: 49.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [C]
+    [Dead Node] New child NOc1nc(N2 died immediately.
+    [Disc & Sim] Prefix: NOc1nc(NC2 | Eff: 26.00% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 5 children (uniform prior=0.2000) -- [(, 4, =, C, O]
+    [Dead Node] New child NOc1nc(NC2 died immediately.
+Loop 490/500 | R: 0.0000 | BestAvgPrefix: NOc1cns(NS(
+    [Disc & Sim] Prefix: NOc1nc(NCc | Eff: 39.50% | AvgLogP: -100.0000 | MAE: 100.0000 | R: 0.0000 | Found 1 children (uniform prior=1.0000) -- [2]
+    [Dead Node] New child NOc1nc(NCc died immediately.
+    [Disc & Sim] Prefix: NOc1nc(NC( | Eff: 88.00% | AvgLogP: 1.4358 | MAE: 0.7892 | R: 0.4542 | Found 3 children (uniform prior=0.3333) -- [=, C, F]
+    [Disc & Sim] Prefix: [H]c | Eff: 70.00% | AvgLogP: 2.4036 | MAE: 1.5060 | R: 0.2218 | Found 1 children (uniform prior=1.0000) -- [1]
+    [Disc & Sim] Prefix: NOc1cnccc1N | Eff: 94.00% | AvgLogP: 1.3285 | MAE: 0.7605 | R: 0.4674 | Found 7 children (uniform prior=0.1429) -- [(, 1, C, N, S, c, n]
+    [Disc & Sim] Prefix: Nc1cn | Eff: 76.00% | AvgLogP: 1.7291 | MAE: 1.0307 | R: 0.3568 | Found 6 children (uniform prior=0.1667) -- [(, 2, [nH], c, n, s]
+    [Disc & Sim] Prefix: NOc1nc(ONC | Eff: 71.50% | AvgLogP: 0.9393 | MAE: 0.6971 | R: 0.4980 | Found 8 children (uniform prior=0.1250) -- [(, ), 2, C, N, O, c, n]
+    [Disc & Sim] Prefix: NOc1nc(O)c | Eff: 84.00% | AvgLogP: 0.8192 | MAE: 0.6938 | R: 0.4997 | Found 4 children (uniform prior=0.2500) -- [(, 2, c, n]
+    [Disc & Sim] Prefix: NOc1nc(CC | Eff: 72.50% | AvgLogP: 1.4215 | MAE: 0.8009 | R: 0.4489 | Found 8 children (uniform prior=0.1250) -- [#, (, ), 2, C, N, O, c]
+    [Disc & Sim] Prefix: CC | Eff: 93.50% | AvgLogP: 2.5035 | MAE: 1.5822 | R: 0.2055 | Found 8 children (uniform prior=0.1250) -- [(, 1, C, N, O, S, c, n]
+    [Disc & Sim] Prefix: NOc1cncc(S | Eff: 95.00% | AvgLogP: 1.4824 | MAE: 0.9032 | R: 0.4053 | Found 10 children (uniform prior=0.1000) -- [#, (, ), 2, C, N, O, S, c, n]
+Loop 500/500 | R: 0.4053 | BestAvgPrefix: NOc1cns(NS(
+
+=== MCTS Completed ===
+Constructing best path based on visit counts (Robust Child):
+  Step 1: N (Visits: 246/278, Value: 105.68, Prior: 0.1250)
+  Step 2: O (Visits: 173/246, Value: 79.02, Prior: 0.1250)
+  Step 3: c (Visits: 151/173, Value: 70.48, Prior: 0.2500)
+  Step 4: 1 (Visits: 150/151, Value: 70.16, Prior: 1.0000)
+  Step 5: n (Visits: 104/150, Value: 49.72, Prior: 0.3333)
+  Step 6: n (Visits: 70/104, Value: 33.92, Prior: 0.2000)
+  Step 7: s (Visits: 36/70, Value: 17.46, Prior: 0.2000)
+  Step 8: ( (Visits: 35/36, Value: 16.94, Prior: 0.3333)
+  Step 9: O (Visits: 10/35, Value: 5.07, Prior: 0.1250)
+  Step 10: C (Visits: 3/10, Value: 1.54, Prior: 0.1429)
+  Step 11: ) (Visits: 1/3, Value: 0.54, Prior: 0.1667)
+
+=== Final Results ===
+Robust Sequence Prefix (Most Visited Path): NOc1nns(OC)
+Evaluating Robust Sequence...
+Robust Sequence Avg LogP: 0.8216311111111109
+Robust Sequence MAE LogP: 0.6385970370370375
+Robust Sequence Best Molecule: NOc1nns(OC)c2c1C(c1ccc(N(C)C)cn1)NCC2
+Robust Sequence Best LogP: 1.0167999999999997
+
+Constructing best path based on max average reward:
+  Step 1: N (Visits: 246/278, Avg Value: 0.4296, Prior: 0.1250)
+  Step 2: O (Visits: 173/246, Avg Value: 0.4567, Prior: 0.1250)
+  Step 3: c (Visits: 151/173, Avg Value: 0.4668, Prior: 0.2500)
+  Step 4: 1 (Visits: 150/151, Avg Value: 0.4677, Prior: 1.0000)
+  Step 5: n (Visits: 104/150, Avg Value: 0.4781, Prior: 0.3333)
+  Step 6: n (Visits: 70/104, Avg Value: 0.4846, Prior: 0.2000)
+  Step 7: s (Visits: 36/70, Avg Value: 0.4851, Prior: 0.2000)
+  Step 8: ( (Visits: 35/36, Avg Value: 0.4840, Prior: 0.3333)
+  Step 9: O (Visits: 10/35, Avg Value: 0.5072, Prior: 0.1250)
+  Step 10: C (Visits: 3/10, Avg Value: 0.5147, Prior: 0.1429)
+  Step 11: ) (Visits: 1/3, Avg Value: 0.5422, Prior: 0.1667)
+Max Reward Sequence Prefix (Highest Avg Reward Path): NOc1nns(OC)
+Evaluating Max Reward Sequence...
+Max Reward Sequence Avg LogP: 0.7423008219178081
+Max Reward Sequence MAE LogP: 0.6608819178082195
+Max Reward Sequence Best Molecule: NOc1nns(OC)c(C(=O)Nc2ccc3c(c2)CCN3C(C)=O)c1
+Max Reward Sequence Best LogP: 0.9986999999999995
+
+Global Best Found During Search:
+  [Single Molecule] Sequence: NNCc1ccccc1S(=O)(=O)NCc1cccc(C#N)c1
+  [Single Molecule] LogP: 1.0001 (Diff: 0.0001)
+  [Batch Average]   Prefix: NOc1cns(NS(
+  [Batch Average]   Avg LogP: 0.9436 (Diff: 0.0564)
+--------------------------------------------------------------
+结束时间: 2026-08-20 12:27:19
